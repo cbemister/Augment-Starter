@@ -1,0 +1,174 @@
+/* Input Component Styles */
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-neutral-700);
+  line-height: var(--line-height-normal);
+}
+
+.required {
+  color: var(--color-error-600);
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-neutral-900);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-neutral-300);
+  border-radius: var(--border-radius-md);
+  transition: all var(--transition-fast);
+}
+
+.input::placeholder {
+  color: var(--color-neutral-400);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-primary-500);
+  box-shadow: var(--focus-ring);
+}
+
+.input:disabled {
+  background-color: var(--color-neutral-100);
+  color: var(--color-neutral-500);
+  cursor: not-allowed;
+}
+
+/* Size Variants */
+.small .input {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-sm);
+}
+
+.large .input {
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--font-size-lg);
+}
+
+/* State Variants */
+.error .input {
+  border-color: var(--color-error-500);
+}
+
+.error .input:focus {
+  border-color: var(--color-error-500);
+  box-shadow: 0 0 0 3px rgb(239 68 68 / 0.1);
+}
+
+.success .input {
+  border-color: var(--color-success-500);
+}
+
+.success .input:focus {
+  border-color: var(--color-success-500);
+  box-shadow: 0 0 0 3px rgb(34 197 94 / 0.1);
+}
+
+/* Input with Icon */
+.withIcon .input {
+  padding-left: var(--spacing-2xl);
+}
+
+.icon {
+  position: absolute;
+  left: var(--spacing-sm);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-neutral-400);
+  pointer-events: none;
+}
+
+.withIcon.small .input {
+  padding-left: var(--spacing-xl);
+}
+
+.withIcon.small .icon {
+  left: var(--spacing-xs);
+}
+
+.withIcon.large .input {
+  padding-left: 3rem;
+}
+
+.withIcon.large .icon {
+  left: var(--spacing-md);
+}
+
+/* Helper Text */
+.helperText {
+  font-size: var(--font-size-sm);
+  color: var(--color-neutral-600);
+  line-height: var(--line-height-normal);
+}
+
+.error .helperText {
+  color: var(--color-error-600);
+}
+
+.success .helperText {
+  color: var(--color-success-600);
+}
+
+/* Textarea Specific */
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+  font-family: var(--font-family-sans);
+}
+
+/* Full Width */
+.fullWidth {
+  width: 100%;
+}
+
+/* Input Group (for multiple inputs in a row) */
+.inputGroupHorizontal {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: flex-end;
+}
+
+.inputGroupHorizontal .inputGroup {
+  flex: 1;
+}
+
+/* Floating Label */
+.floatingLabel {
+  position: relative;
+}
+
+.floatingLabel .label {
+  position: absolute;
+  left: var(--spacing-md);
+  top: var(--spacing-sm);
+  background-color: var(--color-white);
+  padding: 0 var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  color: var(--color-neutral-500);
+  transition: all var(--transition-fast);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.floatingLabel .input:focus + .label,
+.floatingLabel .input:not(:placeholder-shown) + .label {
+  top: -0.5rem;
+  font-size: var(--font-size-xs);
+  color: var(--color-primary-600);
+}

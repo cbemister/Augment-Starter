@@ -1,0 +1,70 @@
+.main {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ padding: var(--spacing-2xl);
+ min-height: 100vh;
+}
+
+.container {
+ max-width: 1200px;
+ width: 100%;
+ text-align: center;
+}
+
+.title {
+ font-size: var(--font-size-4xl);
+ font-weight: var(--font-weight-bold);
+ color: var(--color-primary-600);
+ margin-bottom: var(--spacing-lg);
+ line-height: var(--line-height-tight);
+}
+
+.description {
+ font-size: var(--font-size-lg);
+ color: var(--color-neutral-600);
+ margin-bottom: var(--spacing-2xl);
+ max-width: 600px;
+ margin-left: auto;
+ margin-right: auto;
+ line-height: var(--line-height-relaxed);
+}
+
+.buttonDemo {
+ display: flex;
+ gap: var(--spacing-md);
+ justify-content: center;
+ margin: var(--spacing-2xl) 0;
+ flex-wrap: wrap;
+}
+
+.grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: var(--spacing-xl);
+ margin-top: var(--spacing-2xl);
+}
+
+/* Card styles are now handled by the Card component */
+
+/* Responsive design */
+@media (max-width: 768px) {
+ .main {
+  padding: var(--spacing-lg);
+ }
+
+ .title {
+  font-size: var(--font-size-3xl);
+ }
+
+ .grid {
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+ }
+
+ .buttonDemo {
+  flex-direction: column;
+  align-items: center;
+ }
+}

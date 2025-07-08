@@ -1,0 +1,150 @@
+# Project Memories Template - [PROJECT_NAME]
+
+<!--
+TEMPLATE INSTRUCTIONS:
+This file serves as a centralized memory bank for AI assistants and development teams working on your project.
+Replace all placeholders (e.g., [PROJECT_NAME], [TARGET_AUDIENCE]) with your specific project details.
+Update sections to reflect your project's unique requirements, technology choices, and business goals.
+Maintain this file throughout development to ensure consistent AI assistance and team alignment.
+-->
+
+# Project Overview
+- [PROJECT_NAME] project transforms [PROBLEM_DOMAIN] from [CURRENT_STATE] to [DESIRED_STATE] through [KEY_SOLUTION_1], [KEY_SOLUTION_2], and [KEY_SOLUTION_3], targeting [TARGET_AUDIENCE] seeking [PRIMARY_VALUE_PROPOSITION].
+
+# Technical Details
+- [PROJECT_NAME] uses [FRONTEND_FRAMEWORK] with [FRONTEND_FEATURES], [LANGUAGE] [LANGUAGE_MODE], [DATABASE] with [ORM], [STATE_MANAGEMENT] for [STATE_TYPE], [AUTH_SOLUTION] for authentication, [TESTING_FRAMEWORK] testing framework, and [MONITORING_SOLUTION] with [ERROR_TRACKING].
+- Performance targets: <[PAGE_LOAD_TARGET]s page loads, <[API_RESPONSE_TARGET]ms API responses, <[UI_INTERACTION_TARGET]ms UI interactions.
+- [ARCHITECTURE_PATTERN] folder structure following [DESIGN_METHODOLOGY] methodology.
+- Emphasizes using Templates/PROGRESS_TEMPLATE.md for feature documentation and Templates/BUG_TRACKING_TEMPLATE.md for systematic issue resolution, with mandatory handoff documents for all major implementations including technical details, architecture decisions, testing coverage, and deployment instructions.
+- [ACCESSIBILITY_STANDARD] compliance.
+- [TEST_COVERAGE_TARGET]%+ test coverage requirement.
+- AI assistant integration for complex implementations.
+- [PROJECT_NAME] AI assistant integration patterns include referencing project memories in feature implementation prompts, citing quality standards in code reviews, mentioning performance targets for optimization, and including documentation requirements for comprehensive deliverables, with organized docs/ directory structure for progress/, debugging/, and technical/ documentation.
+
+# Development Environment Requirements
+- [PROJECT_NAME] requires Node.js v22.11.0 or compatible version. Use the portable Node.js installation located at `node-portable/node-v22.11.0-win-x64/` within the project root directory. For detailed setup instructions, refer to the [DEVELOPMENT_GUIDE.md](../DEVELOPMENT_GUIDE.md#nodejs-version-requirement) in the project documentation.
+**Important**: Always use the portable Node.js installation when working on this project. If you encounter any Node.js or npm related issues, first verify that you're using the correct version by running the verification steps above.
+
+# Development Phases
+- [PROJECT_NAME] development follows [PHASE_COUNT]-phase [PHASE_APPROACH] approach: Phase 1 [PHASE_1_NAME] (weeks [PHASE_1_TIMELINE]), Phase 2 [PHASE_2_NAME] (weeks [PHASE_2_TIMELINE]), Phase 3 [PHASE_3_NAME] (weeks [PHASE_3_TIMELINE]), Phase 4 [PHASE_4_NAME] (weeks [PHASE_4_TIMELINE]).
+
+# Feature Priorities and Success Metrics
+- [PROJECT_NAME] feature priorities: Must-have ([MUST_HAVE_FEATURE_1], [MUST_HAVE_FEATURE_2], [MUST_HAVE_FEATURE_3], [MUST_HAVE_FEATURE_4]), Should-have ([SHOULD_HAVE_FEATURE_1], [SHOULD_HAVE_FEATURE_2]), Could-have ([COULD_HAVE_FEATURE_1], [COULD_HAVE_FEATURE_2], [COULD_HAVE_FEATURE_3]).
+- Success targets: [USER_TARGET] users in [TIME_FRAME], [ENGAGEMENT_TARGET]% [ENGAGEMENT_METRIC], [CONVERSION_TARGET]% [CONVERSION_TYPE] conversion.
+
+# Quality Standards
+- [PROJECT_NAME] quality standards require [LANGUAGE] [LANGUAGE_MODE] compliance, [LINTING_TOOLS] enforcement, [PERFORMANCE_STANDARDS] in green zone ([PERFORMANCE_METRIC_1] <[TARGET_1], [PERFORMANCE_METRIC_2] <[TARGET_2], [PERFORMANCE_METRIC_3] <[TARGET_3]), bundle size <[BUNDLE_SIZE_TARGET], [AUDIT_TOOL] score >[AUDIT_SCORE_TARGET], comprehensive error handling, [AUTH_METHOD] authentication with [AUTH_FEATURES], input validation, and [COMPLIANCE_STANDARD] compliance with regular security audits.
+
+# API Integration Details
+- [PROJECT_NAME] [EXTERNAL_API_NAME] integration requires intelligent caching, rate limiting ([FREE_TIER_LIMIT] requests/day free, [PAID_TIER_LIMIT] requests/day paid), comprehensive error handling for API failures, and fallback mechanisms with [FALLBACK_STRATEGY] for offline functionality to ensure reliable [API_PRIMARY_FUNCTION].
+
+# [COLLABORATION_FEATURE_NAME] Features
+- [PROJECT_NAME] [COLLABORATION_FEATURE_NAME] features include real-time [SYNC_ENTITY] synchronization, permission-based access ([PERMISSION_LEVEL_1]/[PERMISSION_LEVEL_2]/[PERMISSION_LEVEL_3]), [INVITATION_METHOD] invitations, [FEEDBACK_SYSTEM] for [FEEDBACK_CONTEXT], responsibility assignment for [TASK_TYPE_1]/[TASK_TYPE_2] tasks, and notification system for [NOTIFICATION_CONTEXT] with [PLATFORM_OPTIMIZATION] interface.
+
+# Documentation Workflow
+- [PROJECT_NAME] documentation workflow requires Templates/PROGRESS_TEMPLATE.md for every major feature completion ([MAJOR_FEATURE_1], [MAJOR_FEATURE_2], [MAJOR_FEATURE_3], [MAJOR_FEATURE_4], [MAJOR_FEATURE_5]) with technical details, architecture decisions, testing coverage, and deployment instructions, plus Templates/BUG_TRACKING_TEMPLATE.md for systematic issue resolution including root cause analysis, attempted solutions, and prevention measures.
+
+# Documentation Update Requirements
+- [PROJECT_NAME] documentation must be updated at specific development milestones to maintain currency and accuracy throughout the development lifecycle. Required update triggers include: (1) Feature kickoff - update AUGMENT_MEMORIES.txt with new feature context, create/update progress templates, and establish technical documentation structure; (2) Milestone completion - update progress templates with implementation details, architecture decisions, and lessons learned; (3) Architecture changes - update technical documentation, API documentation, and system diagrams; (4) Deployment events - update deployment guides, environment configurations, and operational procedures. Documentation types requiring updates include AUGMENT_MEMORIES.txt for AI context, Templates/PROGRESS_TEMPLATE.md for feature tracking, technical documentation for architecture and APIs, README files for setup instructions, and deployment documentation for operational procedures. All documentation updates should be completed before proceeding to the next development phase to ensure team alignment and AI assistant effectiveness.
+
+# File Naming Conventions
+- [PROJECT_NAME] enforces consistent file naming conventions across the codebase to ensure organization and maintainability. Component files use PascalCase (e.g., UserProfile.tsx, NavigationMenu.vue, ProductCard.jsx), utility functions use camelCase (e.g., formatDate.ts, validateEmail.js, calculateTotal.py), test files mirror source files with .test or .spec suffix (e.g., UserProfile.test.tsx, formatDate.spec.js), documentation files use kebab-case (e.g., api-documentation.md, deployment-guide.md, feature-requirements.md), configuration files use lowercase with appropriate extensions (e.g., package.json, tsconfig.json, .env.local), directory names use kebab-case for features and camelCase for utilities (e.g., user-management/, productCatalog/, src/utils/), API route files follow framework conventions (e.g., /api/users/[id].ts, /api/products/route.py), and database migration files include timestamps (e.g., 2024-01-15_create_users_table.sql, 20240115_add_product_index.py). Avoid abbreviations, use descriptive names, maintain consistency within file type categories, and follow [FRAMEWORK_SPECIFIC] naming conventions where applicable.
+
+---
+
+# Placeholder Reference Guide
+
+## Project Identity Placeholders
+- **[PROJECT_NAME]**: Your project's name (e.g., "TaskMaster", "ShopFlow", "ContentHub")
+- **[PROBLEM_DOMAIN]**: The problem area your project addresses (e.g., "task management", "e-commerce", "content creation")
+- **[CURRENT_STATE]**: Current problematic state (e.g., "chaotic workflow", "manual processes", "scattered information")
+- **[DESIRED_STATE]**: Target improved state (e.g., "organized system", "automated workflow", "centralized platform")
+- **[TARGET_AUDIENCE]**: Primary user base (e.g., "small business owners", "content creators", "project managers")
+- **[PRIMARY_VALUE_PROPOSITION]**: Main benefit offered (e.g., "streamlined workflows", "automated reporting", "collaborative planning")
+
+## Solution & Feature Placeholders
+- **[KEY_SOLUTION_1/2/3]**: Core solution components (e.g., "intelligent automation", "real-time collaboration", "advanced analytics")
+- **[MUST_HAVE_FEATURE_1-4]**: Essential features for MVP (e.g., "user authentication", "data visualization", "file management")
+- **[SHOULD_HAVE_FEATURE_1-2]**: Important but not critical features (e.g., "advanced search", "team collaboration")
+- **[COULD_HAVE_FEATURE_1-3]**: Nice-to-have features (e.g., "AI recommendations", "premium analytics", "mobile app")
+- **[COLLABORATION_FEATURE_NAME]**: Main collaboration functionality (e.g., "Team Workspace", "Multi-user Editing", "Shared Projects")
+
+## Technical Stack Placeholders
+- **[FRONTEND_FRAMEWORK]**: Frontend technology (e.g., "React 18", "Vue 3", "Angular 16", "Next.js 14")
+- **[FRONTEND_FEATURES]**: Framework-specific features (e.g., "App Router", "Composition API", "Standalone Components")
+- **[LANGUAGE]**: Programming language (e.g., "TypeScript", "JavaScript", "Python", "C#")
+- **[LANGUAGE_MODE]**: Language configuration (e.g., "strict mode", "ES2022", "Python 3.11")
+- **[DATABASE]**: Database system (e.g., "PostgreSQL", "MongoDB", "MySQL", "SQLite")
+- **[ORM]**: Object-Relational Mapping tool (e.g., "Prisma", "TypeORM", "Sequelize", "Entity Framework")
+- **[STATE_MANAGEMENT]**: State management solution (e.g., "TanStack Query", "Redux Toolkit", "Zustand", "Pinia")
+- **[STATE_TYPE]**: Type of state managed (e.g., "server state", "client state", "global state")
+- **[AUTH_SOLUTION]**: Authentication system (e.g., "NextAuth.js", "Auth0", "Firebase Auth", "Supabase Auth")
+- **[TESTING_FRAMEWORK]**: Testing tools (e.g., "Jest/Playwright", "Vitest/Cypress", "Mocha/Selenium")
+- **[MONITORING_SOLUTION]**: Performance monitoring (e.g., "Vercel Analytics", "New Relic", "DataDog")
+- **[ERROR_TRACKING]**: Error tracking service (e.g., "Sentry", "Bugsnag", "Rollbar")
+
+## Architecture & Design Placeholders
+- **[ARCHITECTURE_PATTERN]**: Code organization pattern (e.g., "Feature-based", "Domain-driven", "Layered")
+- **[DESIGN_METHODOLOGY]**: Design approach (e.g., "atomic design", "component-driven", "design systems")
+- **[ACCESSIBILITY_STANDARD]**: Accessibility compliance (e.g., "WCAG 2.1 AA", "Section 508", "ADA")
+
+## Performance & Quality Placeholders
+- **[PAGE_LOAD_TARGET]**: Page load time target in seconds (e.g., "2", "3", "1.5")
+- **[API_RESPONSE_TARGET]**: API response time in milliseconds (e.g., "500", "200", "1000")
+- **[UI_INTERACTION_TARGET]**: UI interaction time in milliseconds (e.g., "100", "50", "200")
+- **[TEST_COVERAGE_TARGET]**: Test coverage percentage (e.g., "80", "90", "95")
+- **[PERFORMANCE_STANDARDS]**: Performance benchmarks (e.g., "Core Web Vitals", "Lighthouse", "PageSpeed")
+- **[PERFORMANCE_METRIC_1-3]**: Specific metrics (e.g., "LCP", "FID", "CLS" or "Response Time", "Throughput", "Error Rate")
+- **[TARGET_1-3]**: Performance targets (e.g., "2.5s", "100ms", "0.1")
+- **[BUNDLE_SIZE_TARGET]**: Bundle size limit (e.g., "1MB", "500KB", "2MB")
+- **[AUDIT_TOOL]**: Performance audit tool (e.g., "Lighthouse", "WebPageTest", "GTmetrix")
+- **[AUDIT_SCORE_TARGET]**: Audit score target (e.g., "90", "95", "85")
+- **[LINTING_TOOLS]**: Code quality tools (e.g., "ESLint/Prettier", "TSLint", "Pylint/Black")
+
+## Authentication & Security Placeholders
+- **[AUTH_METHOD]**: Authentication method (e.g., "JWT", "OAuth", "SAML", "Session-based")
+- **[AUTH_FEATURES]**: Authentication features (e.g., "refresh tokens", "2FA", "SSO", "password reset")
+- **[COMPLIANCE_STANDARD]**: Regulatory compliance (e.g., "GDPR", "CCPA", "HIPAA", "SOX")
+- **[PERMISSION_LEVEL_1-3]**: User permission levels (e.g., "admin/editor/viewer", "owner/member/guest")
+
+## Development Process Placeholders
+- **[PHASE_COUNT]**: Number of development phases (e.g., "4", "5", "6")
+- **[PHASE_APPROACH]**: Development approach (e.g., "sequential", "iterative", "agile")
+- **[PHASE_1-4_NAME]**: Phase names (e.g., "Foundation", "Core Features", "Advanced Features", "Launch")
+- **[PHASE_1-4_TIMELINE]**: Phase timelines (e.g., "1-4", "5-8", "9-12")
+
+## Business Metrics Placeholders
+- **[USER_TARGET]**: User acquisition target (e.g., "10K", "50K", "100K")
+- **[TIME_FRAME]**: Achievement timeframe (e.g., "6 months", "1 year", "Q1 2024")
+- **[ENGAGEMENT_TARGET]**: Engagement percentage (e.g., "70", "80", "60")
+- **[ENGAGEMENT_METRIC]**: Engagement measurement (e.g., "WAU", "DAU", "MAU", "retention rate")
+- **[CONVERSION_TARGET]**: Conversion percentage (e.g., "15", "20", "10")
+- **[CONVERSION_TYPE]**: Conversion type (e.g., "premium", "paid", "subscription", "trial-to-paid")
+
+## API & Integration Placeholders
+- **[EXTERNAL_API_NAME]**: Third-party API name (e.g., "Stripe API", "Google Maps API", "Twilio API")
+- **[FREE_TIER_LIMIT]**: Free tier usage limit (e.g., "150", "1000", "5000")
+- **[PAID_TIER_LIMIT]**: Paid tier usage limit (e.g., "1,500", "10,000", "unlimited")
+- **[FALLBACK_STRATEGY]**: Offline/fallback approach (e.g., "cached database", "local storage", "static content")
+- **[API_PRIMARY_FUNCTION]**: Main API functionality (e.g., "data retrieval", "payment processing", "content delivery")
+
+## Collaboration & Features Placeholders
+- **[SYNC_ENTITY]**: Synchronized data type (e.g., "documents", "projects", "tasks", "plans")
+- **[INVITATION_METHOD]**: Invitation system (e.g., "email", "link sharing", "in-app")
+- **[FEEDBACK_SYSTEM]**: Feedback mechanism (e.g., "comment system", "rating system", "review system")
+- **[FEEDBACK_CONTEXT]**: Feedback subject (e.g., "content quality", "task completion", "user experience")
+- **[TASK_TYPE_1-2]**: Task categories (e.g., "development/testing", "content/review", "sales/support")
+- **[NOTIFICATION_CONTEXT]**: Notification scope (e.g., "team activities", "system updates", "user actions")
+- **[PLATFORM_OPTIMIZATION]**: Platform focus (e.g., "mobile-optimized", "desktop-first", "responsive")
+
+## Documentation Placeholders
+- **[MAJOR_FEATURE_1-5]**: Major features requiring documentation (e.g., "User Management", "Payment System", "Analytics Dashboard")
+- **[FRAMEWORK_SPECIFIC]**: Framework-specific naming conventions (e.g., "Next.js", "Django", "Rails", "Laravel")
+
+## Usage Instructions
+1. **Initial Setup**: Replace [PROJECT_NAME] throughout the document with your actual project name
+2. **Systematic Replacement**: Use Find & Replace to update all placeholders with your specific values
+3. **Section Customization**: Modify or remove sections that don't apply to your project type
+4. **Continuous Updates**: Keep this file updated as your project evolves and requirements change
+5. **AI Integration**: Reference this file when working with AI assistants to maintain consistency
+6. **Team Alignment**: Share this file with team members to ensure everyone understands project context and standards

@@ -1,0 +1,155 @@
+/* Card Component Styles */
+.card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-neutral-200);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* Card Variants */
+.elevated {
+  box-shadow: var(--shadow-md);
+}
+
+.elevated:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.outlined {
+  border: 2px solid var(--color-neutral-200);
+  box-shadow: none;
+}
+
+.outlined:hover {
+  border-color: var(--color-primary-300);
+  box-shadow: var(--shadow-sm);
+}
+
+.flat {
+  border: none;
+  box-shadow: none;
+  background-color: var(--color-neutral-50);
+}
+
+.flat:hover {
+  background-color: var(--color-neutral-100);
+}
+
+/* Card Sections */
+.header {
+  padding: var(--spacing-lg);
+  border-bottom: 1px solid var(--color-neutral-200);
+}
+
+.body {
+  padding: var(--spacing-lg);
+}
+
+.footer {
+  padding: var(--spacing-lg);
+  border-top: 1px solid var(--color-neutral-200);
+  background-color: var(--color-neutral-50);
+}
+
+/* Compact Padding */
+.compact .header,
+.compact .body,
+.compact .footer {
+  padding: var(--spacing-md);
+}
+
+/* Spacious Padding */
+.spacious .header,
+.spacious .body,
+.spacious .footer {
+  padding: var(--spacing-xl);
+}
+
+/* Card Title */
+.title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-neutral-900);
+  margin: 0;
+  line-height: var(--line-height-tight);
+}
+
+/* Card Subtitle */
+.subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-neutral-600);
+  margin: var(--spacing-xs) 0 0 0;
+  line-height: var(--line-height-normal);
+}
+
+/* Card Content */
+.content {
+  color: var(--color-neutral-700);
+  line-height: var(--line-height-relaxed);
+}
+
+.content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Interactive Card */
+.interactive {
+  cursor: pointer;
+  user-select: none;
+}
+
+.interactive:focus {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.interactive:active {
+  transform: scale(0.98);
+}
+
+/* Card Image */
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.imageContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.imageContainer .image {
+  transition: transform var(--transition-base);
+}
+
+.interactive .imageContainer .image:hover {
+  transform: scale(1.05);
+}
+
+/* Card Actions */
+.actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.actions.left {
+  justify-content: flex-start;
+}
+
+.actions.center {
+  justify-content: center;
+}
+
+.actions.between {
+  justify-content: space-between;
+}

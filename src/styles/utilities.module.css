@@ -1,0 +1,465 @@
+/* Utility Classes for Common Patterns */
+
+/* Layout Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.containerSmall {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.containerLarge {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.flex {
+  display: flex;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+.itemsCenter {
+  align-items: center;
+}
+
+.itemsStart {
+  align-items: flex-start;
+}
+
+.itemsEnd {
+  align-items: flex-end;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.justifyBetween {
+  justify-content: space-between;
+}
+
+.justifyAround {
+  justify-content: space-around;
+}
+
+.justifyStart {
+  justify-content: flex-start;
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}
+
+.grid {
+  display: grid;
+}
+
+.gridCols1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.gridCols2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gridCols3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gridCols4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gridColsAuto {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Spacing Utilities */
+.gapXs {
+  gap: var(--spacing-xs);
+}
+
+.gapSm {
+  gap: var(--spacing-sm);
+}
+
+.gapMd {
+  gap: var(--spacing-md);
+}
+
+.gapLg {
+  gap: var(--spacing-lg);
+}
+
+.gapXl {
+  gap: var(--spacing-xl);
+}
+
+.gap2xl {
+  gap: var(--spacing-2xl);
+}
+
+/* Margin Utilities */
+.mAuto {
+  margin: auto;
+}
+
+.mxAuto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.myAuto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.mtXs {
+  margin-top: var(--spacing-xs);
+}
+
+.mtSm {
+  margin-top: var(--spacing-sm);
+}
+
+.mtMd {
+  margin-top: var(--spacing-md);
+}
+
+.mtLg {
+  margin-top: var(--spacing-lg);
+}
+
+.mtXl {
+  margin-top: var(--spacing-xl);
+}
+
+.mt2xl {
+  margin-top: var(--spacing-2xl);
+}
+
+.mbXs {
+  margin-bottom: var(--spacing-xs);
+}
+
+.mbSm {
+  margin-bottom: var(--spacing-sm);
+}
+
+.mbMd {
+  margin-bottom: var(--spacing-md);
+}
+
+.mbLg {
+  margin-bottom: var(--spacing-lg);
+}
+
+.mbXl {
+  margin-bottom: var(--spacing-xl);
+}
+
+.mb2xl {
+  margin-bottom: var(--spacing-2xl);
+}
+
+/* Padding Utilities */
+.p0 {
+  padding: 0;
+}
+
+.pXs {
+  padding: var(--spacing-xs);
+}
+
+.pSm {
+  padding: var(--spacing-sm);
+}
+
+.pMd {
+  padding: var(--spacing-md);
+}
+
+.pLg {
+  padding: var(--spacing-lg);
+}
+
+.pXl {
+  padding: var(--spacing-xl);
+}
+
+.p2xl {
+  padding: var(--spacing-2xl);
+}
+
+/* Text Utilities */
+.textCenter {
+  text-align: center;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.textXs {
+  font-size: var(--font-size-xs);
+}
+
+.textSm {
+  font-size: var(--font-size-sm);
+}
+
+.textBase {
+  font-size: var(--font-size-base);
+}
+
+.textLg {
+  font-size: var(--font-size-lg);
+}
+
+.textXl {
+  font-size: var(--font-size-xl);
+}
+
+.text2xl {
+  font-size: var(--font-size-2xl);
+}
+
+.text3xl {
+  font-size: var(--font-size-3xl);
+}
+
+.text4xl {
+  font-size: var(--font-size-4xl);
+}
+
+.fontLight {
+  font-weight: var(--font-weight-light);
+}
+
+.fontNormal {
+  font-weight: var(--font-weight-normal);
+}
+
+.fontMedium {
+  font-weight: var(--font-weight-medium);
+}
+
+.fontSemibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.fontBold {
+  font-weight: var(--font-weight-bold);
+}
+
+/* Color Utilities */
+.textPrimary {
+  color: var(--color-primary-600);
+}
+
+.textSecondary {
+  color: var(--color-neutral-600);
+}
+
+.textMuted {
+  color: var(--color-neutral-500);
+}
+
+.textSuccess {
+  color: var(--color-success-600);
+}
+
+.textWarning {
+  color: var(--color-warning-600);
+}
+
+.textError {
+  color: var(--color-error-600);
+}
+
+.textInfo {
+  color: var(--color-info-600);
+}
+
+/* Background Utilities */
+.bgWhite {
+  background-color: var(--color-white);
+}
+
+.bgGray50 {
+  background-color: var(--color-neutral-50);
+}
+
+.bgGray100 {
+  background-color: var(--color-neutral-100);
+}
+
+.bgPrimary {
+  background-color: var(--color-primary-600);
+  color: var(--color-white);
+}
+
+.bgAccent {
+  background-color: var(--color-accent-600);
+  color: var(--color-white);
+}
+
+/* Border Utilities */
+.border {
+  border: 1px solid var(--color-neutral-200);
+}
+
+.borderTop {
+  border-top: 1px solid var(--color-neutral-200);
+}
+
+.borderBottom {
+  border-bottom: 1px solid var(--color-neutral-200);
+}
+
+.borderLeft {
+  border-left: 1px solid var(--color-neutral-200);
+}
+
+.borderRight {
+  border-right: 1px solid var(--color-neutral-200);
+}
+
+.borderNone {
+  border: none;
+}
+
+.rounded {
+  border-radius: var(--border-radius-md);
+}
+
+.roundedSm {
+  border-radius: var(--border-radius-sm);
+}
+
+.roundedLg {
+  border-radius: var(--border-radius-lg);
+}
+
+.roundedFull {
+  border-radius: var(--border-radius-full);
+}
+
+/* Shadow Utilities */
+.shadowSm {
+  box-shadow: var(--shadow-sm);
+}
+
+.shadow {
+  box-shadow: var(--shadow-base);
+}
+
+.shadowMd {
+  box-shadow: var(--shadow-md);
+}
+
+.shadowLg {
+  box-shadow: var(--shadow-lg);
+}
+
+.shadowNone {
+  box-shadow: none;
+}
+
+/* Width/Height Utilities */
+.wFull {
+  width: 100%;
+}
+
+.hFull {
+  height: 100%;
+}
+
+.wAuto {
+  width: auto;
+}
+
+.hAuto {
+  height: auto;
+}
+
+/* Position Utilities */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+/* Overflow Utilities */
+.overflowHidden {
+  overflow: hidden;
+}
+
+.overflowAuto {
+  overflow: auto;
+}
+
+.overflowScroll {
+  overflow: scroll;
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  .hiddenMobile {
+    display: none;
+  }
+  
+  .flexColumnMobile {
+    flex-direction: column;
+  }
+  
+  .textCenterMobile {
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .hiddenDesktop {
+    display: none;
+  }
+}
