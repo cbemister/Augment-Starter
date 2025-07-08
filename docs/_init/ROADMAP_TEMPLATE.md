@@ -5,7 +5,7 @@
 **Created:** [Creation Date]
 **Last Updated:** [Last Update Date]
 **Project Lead:** [Project Lead/Team Name]
-**Development Approach:** [Development Methodology with AI Assistant Integration]
+**Development Approach:** [Design-driven Development Methodology with AI Assistant Integration]
 
 ## Development Environment Requirements
 
@@ -29,7 +29,7 @@ This setup ensures compatibility with [Framework/Technology], [Language] strict 
 - **Primary Technology Stack**: [Technology Stack]
 - **Target Performance**: [Performance Targets]
 - **Accessibility Standard**: [Accessibility Standard]
-- **Development Methodology**: [Methodology] with AI assistant integration
+- **Development Methodology**: [Design-driven methodology] with AI assistant integration
 
 ### Success Metrics
 - **Performance Targets**: [Performance Metrics]
@@ -45,7 +45,7 @@ Frontend:
 ├── Framework: [Frontend Framework]
 ├── Language: [Programming Language]
 ├── State Management: [State Management Solution]
-├── Styling: [Styling Solution]
+├── Styling: CSS Modules + [Design System]
 ├── Testing: [Testing Framework]
 └── Build Tool: [Build Tool]
 
@@ -142,7 +142,7 @@ Before completing any phase, verify:
    - [Framework] with [specific configuration]
    - Feature-based folder structure at src/features/[feature-name]/
    - [State Management] for [specific integration]
-   - [Styling Solution] with [design approach]
+   - CSS Modules with [design approach]
    - [Coverage]% test coverage with [Testing Framework]
    - [Accessibility Standard] compliance with proper ARIA labels
    - [Performance Target] performance targets for all interactions"
@@ -185,11 +185,13 @@ Before completing any phase, verify:
 6. **Reference Documentation**: MANDATORY three-methodology approach for every phase (see template above)
 
 ### Workflow Optimization
-1. **Sequential Task Execution**: Complete phases in order to maintain feature dependencies
-2. **Incremental Handoff Updates**: Update documentation as [domain] features progress
-3. **Performance Monitoring**: Built-in performance tracking for [key workflows]
-4. **Error Handling**: Comprehensive error boundaries and user feedback for API failures
-5. **Accessibility First**: [Accessibility Standard] compliance from initial implementation of all features
+1. **Design-Driven Development**: Integrate design concepts early in development workflow
+2. **Sequential Task Execution**: Complete phases in order to maintain feature dependencies
+3. **Incremental Handoff Updates**: Update documentation as [domain] features progress
+4. **Performance Monitoring**: Built-in performance tracking for [key workflows]
+5. **Error Handling**: Comprehensive error boundaries and user feedback for API failures
+6. **Accessibility First**: [Accessibility Standard] compliance from initial implementation of all features
+7. **CSS Modules Architecture**: Component-scoped styling with design system consistency
 
 ## Phase Structure and Dependencies
 
