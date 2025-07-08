@@ -20,6 +20,10 @@ A modern Next.js starter template featuring CSS Modules with a comprehensive cus
 - **Components**: Custom UI component library
 - **Development**: ESLint, TypeScript strict mode
 
+## 🚀 Quick Start
+
+**New to this project?** Check out our **[Quick Start Guide](./docs/init/QUICK_START.md)** for streamlined setup instructions and immediate development readiness.
+
 ## 📦 Installation
 
 1. **Clone the repository**
@@ -42,6 +46,8 @@ A modern Next.js starter template featuring CSS Modules with a comprehensive cus
    ```
    http://localhost:3000
    ```
+
+> 💡 **Tip**: For detailed setup instructions, troubleshooting, and development workflow guidance, see the [Quick Start Guide](./docs/init/QUICK_START.md).
 
 ## 🎨 Design System
 
@@ -173,7 +179,8 @@ src/
 
 ## 📚 Documentation
 
-- [CSS Modules Guide](./docs/CSS_MODULES_GUIDE.md) - Comprehensive guide for using CSS Modules
+- **[Quick Start Guide](./docs/init/QUICK_START.md)** - **Start here!** Streamlined setup and development workflow
+- [CSS Modules Guide](./docs/development/CSS_MODULES_GUIDE.md) - Comprehensive guide for using CSS Modules
 - [Design System](./src/styles/design-tokens.css) - Complete design token reference
 - [Component Library](./src/components/ui/) - UI component documentation
 
