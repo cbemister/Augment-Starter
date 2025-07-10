@@ -1,12 +1,16 @@
 # Git Conflict Resolution in Documentation-Driven Development
 
-**Version**: 1.0  
-**Created**: July 2025  
+**Version**: 1.0
+**Created**: July 2025
 **Purpose**: Comprehensive guide for resolving Git conflicts in documentation-driven methodology workflows
+
+**Enhanced Integration**: This guide now integrates with the comprehensive [Git Workflow and Policies](../project-lifecycle/git-workflow/README.md) documentation system, providing specialized conflict resolution strategies while maintaining consistency with the overall Git workflow framework.
 
 ## Overview
 
 When working with multiple methodology branches in a documentation-driven workflow, handling merge conflicts requires specific strategies. This guide provides practical Git commands, best practices, and workflows for resolving conflicts while maintaining the integrity of parallel methodology development.
+
+**Integration with Project Lifecycle**: These conflict resolution strategies align with the [8-phase project lifecycle framework](../project-lifecycle/README.md) and support the [Feature Development Best Practices](../project-lifecycle/feature-development/README.md) for comprehensive development workflows.
 
 ## Understanding Conflict Types in Methodology Workflows
 
@@ -42,9 +46,9 @@ git merge -s recursive -Xpatience sandbox/design-system-methodology-c
 ```
 
 #### When to Use Each Strategy
-- **-Xours**: When integrating methodology features into existing implementation
-- **-Xtheirs**: When adopting a complete methodology approach
-- **-Xpatience**: When dealing with extensive documentation conflicts
+- **-Xours**: When integrating methodology features into existing implementation following [Git Workflow merge strategies](../project-lifecycle/git-workflow/README.md)
+- **-Xtheirs**: When adopting a complete methodology approach per [branching strategies](../project-lifecycle/git-workflow/branching-strategies.md)
+- **-Xpatience**: When dealing with extensive documentation conflicts in feature development workflows
 
 ### 2. Using git checkout with --ours or --theirs for Specific Files
 
@@ -619,6 +623,25 @@ This comprehensive approach to Git conflict resolution in documentation-driven d
 3. **Document decisions** thoroughly for future reference and team learning
 4. **Automate where possible** to reduce manual conflict resolution overhead
 5. **Test thoroughly** after each conflict resolution to ensure system integrity
+
+## Related Documentation
+
+### 📚 Enhanced Git Workflow Integration
+- [Git Workflow and Policies](../project-lifecycle/git-workflow/README.md) - Comprehensive Git policies and best practices
+- [Branching Strategies](../project-lifecycle/git-workflow/branching-strategies.md) - Organized development workflows
+- [Commit Conventions](../project-lifecycle/git-workflow/commit-conventions.md) - Consistent commit messaging
+- [Pull Request Templates](../project-lifecycle/git-workflow/pull-request-templates.md) - Structured code reviews
+
+### 🛠️ Development Integration
+- [Feature Development Best Practices](../project-lifecycle/feature-development/README.md) - Individual feature development guidance
+- [Project Lifecycle Framework](../project-lifecycle/README.md) - Complete 8-phase development process
+- [Solo Development Best Practices](./SOLO_DEVELOPMENT_BEST_PRACTICES.md) - Individual developer workflows
+- [Git Branches and Deployment Strategy](./GIT_BRANCHES_AND_DEPLOYMENT_STRATEGY.md) - Sandbox-driven development workflows
+
+### 📋 Supporting Documentation
+- [Development Troubleshooting](./troubleshooting/README.md) - Issue resolution and knowledge management
+- [Session Recovery Process](./SESSION_RECOVERY_PROCESS.md) - Context preservation
+- [Core Application Features](../core-features/README.md) - Authentication, database, API integration
 
 By following these practices, teams can efficiently manage parallel methodology development while maintaining code quality and project momentum.
 ```

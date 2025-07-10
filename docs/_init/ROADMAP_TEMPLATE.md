@@ -5,7 +5,7 @@
 **Created:** [Creation Date]
 **Last Updated:** [Last Update Date]
 **Project Lead:** [Project Lead/Team Name]
-**Development Approach:** [Design-driven Development Methodology with AI Assistant Integration]
+**Development Approach:** [Project Lifecycle Framework with Feature Development Best Practices and Git Workflow Integration]
 
 ## Development Environment Requirements
 
@@ -21,21 +21,34 @@ This setup ensures compatibility with [Framework/Technology], [Language] strict 
 
 ## Executive Summary
 
-[Project Name] is a comprehensive [domain/purpose] application that transforms [problem statement] into [solution description]. The project emphasizes [key feature 1], [key feature 2], [key feature 3], and [key feature 4].
+[Project Name] is a comprehensive [domain/purpose] application that transforms [problem statement] into [solution description]. The project follows the complete 8-phase project lifecycle framework with integrated Feature Development Best Practices and Git Workflow policies.
 
 ### Project Scope
-- **Total Estimated Duration**: [X] weeks ([Y] months)
-- **Number of Phases**: [X] phases with [Y] sub-phases
+- **Total Estimated Duration**: [X] weeks ([Y] months) - Methodology dependent
+- **Project Lifecycle Phases**: 8 phases (0-8) with supporting documentation systems
 - **Primary Technology Stack**: [Technology Stack]
 - **Target Performance**: [Performance Targets]
 - **Accessibility Standard**: [Accessibility Standard]
-- **Development Methodology**: [Design-driven methodology] with AI assistant integration
+- **Development Framework**: Project Lifecycle Framework with Feature Development and Git Workflow integration
 
-### Success Metrics
-- **Performance Targets**: [Performance Metrics]
-- **Quality Standards**: [Quality Metrics]
-- **User Experience**: [UX Metrics]
-- **Technical Debt**: [Technical Standards]
+### Success Metrics by Methodology
+**MVP/Rapid (2-4 weeks)**:
+- **Performance Targets**: [Basic Performance Metrics]
+- **Quality Standards**: 80% test coverage, essential features functional
+- **User Experience**: Core workflows operational
+- **Technical Debt**: Minimal, documented for future enhancement
+
+**Balanced/Standard (4-8 weeks)**:
+- **Performance Targets**: [Standard Performance Metrics]
+- **Quality Standards**: 90% test coverage, production-ready features
+- **User Experience**: Complete user workflows with responsive design
+- **Technical Debt**: Managed, with refactoring plan
+
+**Comprehensive/Enterprise (8-12 weeks)**:
+- **Performance Targets**: [Enterprise Performance Metrics]
+- **Quality Standards**: 95% test coverage, enterprise-grade features
+- **User Experience**: Advanced UX with accessibility compliance
+- **Technical Debt**: Minimized, with continuous improvement processes
 
 ## Project Architecture Overview
 
@@ -64,7 +77,37 @@ Infrastructure:
 └── CDN: [CDN Solution]
 ```
 
-### Feature-Based Folder Structure
+### Project Documentation Structure
+```
+docs/
+├── project-lifecycle/           # 8-Phase Project Lifecycle Framework
+│   ├── 00-project-conception/   # Phase 0: Initial idea to project definition
+│   ├── 01-technology-stack-selection/  # Phase 1: Technology decision-making
+│   ├── 02-project-setup/        # Phase 2: Initial project configuration
+│   ├── 03-design-and-architecture/     # Phase 3: System design and planning
+│   ├── 04-core-development/     # Phase 4: Implementation phases
+│   ├── 05-quality-assurance/    # Phase 5: Testing and validation
+│   ├── 06-deployment-preparation/      # Phase 6: Production readiness
+│   ├── 07-production-deployment/       # Phase 7: Go-live and monitoring
+│   ├── 08-maintenance-and-evolution/   # Phase 8: Post-deployment lifecycle
+│   ├── feature-development/     # Feature Development Best Practices
+│   ├── git-workflow/           # Git Workflow and Policies
+│   ├── decision-trees/         # Cross-phase decision support
+│   ├── integration-matrices/   # Core feature integration guides
+│   └── templates/              # Reusable templates and checklists
+├── core-features/              # Core application features documentation
+│   ├── authentication/         # Authentication system documentation
+│   ├── database/              # Database layer documentation
+│   ├── api/                   # API layer documentation
+│   ├── state-management/      # State management documentation
+│   ├── error-handling/        # Error handling documentation
+│   └── testing/               # Testing framework documentation
+└── development/               # Development workflow documentation
+    ├── troubleshooting/       # Troubleshooting and knowledge management
+    └── [existing git guides]  # Enhanced by git-workflow documentation
+```
+
+### Feature-Based Application Structure
 ```
 src/
 ├── features/
@@ -89,21 +132,27 @@ src/
 
 ## Development Methodology
 
-### Solo Development with AI Assistants
+### Project Lifecycle Framework Integration
 
 #### Pre-Development Planning Phase
-**MANDATORY**: Before any development begins, teams MUST complete the Implementation Planning & Methodology Selection process:
+**MANDATORY**: Before any development begins, teams MUST complete the comprehensive Project Lifecycle Framework planning process:
 
-1. **Implementation Planning Requirements**
-   - Create 3 distinct implementation plans (one for each methodology)
+1. **Phase 0: Project Conception Requirements**
+   - Complete project conception documentation following Phase 0 guidelines
+   - Transform initial ideas into well-defined project requirements
+   - Establish clear scope and success criteria using project lifecycle templates
+   - Reference: `docs/project-lifecycle/00-project-conception/README.md`
+
+2. **Phase 1: Technology Stack Selection Requirements**
+   - Complete technology stack evaluation using Phase 1 methodology
+   - Create 3 distinct technology approaches (conservative, modern, hybrid)
    - Include effort estimates, risk assessments, and success probability ratings
-   - Complete structured decision matrix for methodology selection
-   - Validate team capacity, timeline constraints, and technical complexity alignment
+   - Reference: `docs/project-lifecycle/01-technology-stack-selection/README.md`
 
-2. **Decision Matrix Template**
+3. **Methodology Selection Decision Matrix**
    ```markdown
-   | Criteria | Weight | Methodology A | Methodology B | Methodology C |
-   |----------|--------|---------------|---------------|---------------|
+   | Criteria | Weight | MVP/Rapid | Balanced/Standard | Comprehensive/Enterprise |
+   |----------|--------|-----------|-------------------|-------------------------|
    | Timeline Constraint | 25% | [Score 1-5] | [Score 1-5] | [Score 1-5] |
    | Team Expertise | 20% | [Score 1-5] | [Score 1-5] | [Score 1-5] |
    | Technical Complexity | 20% | [Score 1-5] | [Score 1-5] | [Score 1-5] |
@@ -113,46 +162,53 @@ src/
    | **Total Weighted Score** | 100% | [Calculated] | [Calculated] | [Calculated] |
    ```
 
-#### Reference Documentation Requirements
-**MANDATORY**: Every phase and sub-phase MUST include a Reference Documentation section with three alternative methodologies following this exact structure:
+#### Project Lifecycle Framework Integration
+**MANDATORY**: Every phase MUST follow the established 8-phase project lifecycle framework with integrated Feature Development and Git Workflow documentation:
 
 ```markdown
-#### Reference Documentation
-[Phase/Feature name] with three alternative [implementation/approach] methodologies:
-- **Foundation**: `docs/sandbox/[phase-number]-[phase-folder]/00-[phase-name]-foundation.md`
-- **Methodology A**: `docs/sandbox/[phase-number]-[phase-folder]/01-[methodology-a-name].md` ([Brief description of approach A])
-- **Methodology B**: `docs/sandbox/[phase-number]-[phase-folder]/02-[methodology-b-name].md` ([Brief description of approach B])
-- **Methodology C**: `docs/sandbox/[phase-number]-[phase-folder]/03-[methodology-c-name].md` ([Brief description of approach C])
+#### Phase Documentation Integration
+[Phase Name] implementation following Project Lifecycle Framework:
+- **Phase Documentation**: `docs/project-lifecycle/[phase-number]-[phase-name]/README.md`
+- **Feature Development**: `docs/project-lifecycle/feature-development/README.md` (for Phase 4)
+- **Git Workflow**: `docs/project-lifecycle/git-workflow/README.md` (all phases)
+- **Core Features**: `docs/core-features/[relevant-feature]/README.md`
+- **Troubleshooting**: `docs/development/troubleshooting/README.md`
 
-**Selection Criteria**: [Guidance for choosing between methodologies based on project constraints, team expertise, timeline, and business requirements]
+**Integration Points**: [Specific integration with core features, troubleshooting system, and supporting documentation]
 ```
 
 #### Three-Methodology Approach Guidelines
-Each Reference Documentation section must provide three distinct approaches with specific scope boundaries and implementation timelines:
+Each phase implementation must provide three distinct approaches with specific scope boundaries and implementation timelines:
 
-1. **Methodology A (MVP/Rapid)**: 2-4 week implementation
-   - **Scope**: Core features only, minimal customization
-   - **Features**: Essential functionality, basic UI, standard patterns
+1. **MVP/Rapid Methodology**: 2-4 week total project timeline
+   - **Scope**: Essential features only, streamlined processes
+   - **Features**: Core functionality, basic UI, standard patterns
    - **Complexity**: Low - proven solutions, minimal dependencies
    - **Risk Level**: Low - well-tested approaches, quick validation
    - **Team Requirements**: 1-2 developers, basic expertise level
    - **Success Criteria**: Functional MVP, basic user workflows, 80% core features
+   - **Feature Development**: Streamlined feature development process
+   - **Git Workflow**: Simplified Git workflow with essential branches
 
-2. **Methodology B (Balanced/Standard)**: 4-8 week implementation
-   - **Scope**: Essential features + 2-3 enhancements, moderate customization
+2. **Balanced/Standard Methodology**: 4-8 week total project timeline
+   - **Scope**: Complete features with moderate enhancements
    - **Features**: Core functionality + user experience improvements, responsive design
    - **Complexity**: Medium - modern patterns, selective optimization
    - **Risk Level**: Medium - balanced approach, manageable complexity
    - **Team Requirements**: 2-3 developers, intermediate expertise level
    - **Success Criteria**: Production-ready application, 90% planned features, performance targets met
+   - **Feature Development**: Standard feature development lifecycle
+   - **Git Workflow**: Comprehensive Git workflow with full branch strategy
 
-3. **Methodology C (Comprehensive/Enterprise)**: 8-12 week implementation
+3. **Comprehensive/Enterprise Methodology**: 8-12 week total project timeline
    - **Scope**: Full feature set + advanced capabilities, extensive customization
    - **Features**: Complete functionality, advanced UI/UX, optimization, integrations
    - **Complexity**: High - cutting-edge patterns, comprehensive architecture
    - **Risk Level**: High - complex implementation, requires expertise
    - **Team Requirements**: 3-4 developers, advanced expertise level
    - **Success Criteria**: Enterprise-grade solution, 100% features, scalability validated
+   - **Feature Development**: Detailed feature development with enterprise considerations
+   - **Git Workflow**: Complex Git workflow with security and compliance
 
 #### Individual Development Roadmaps
 **MANDATORY**: Each methodology MUST include a detailed "Development Roadmap" sub-section with:
@@ -410,260 +466,427 @@ Before completing any phase, verify:
 6. **Accessibility First**: [Accessibility Standard] compliance from initial implementation of all features
 7. **CSS Modules Architecture**: Component-scoped styling with design system consistency
 
-## Phase Structure and Dependencies
+## Project Lifecycle Framework Structure
 
-### Dependency Mapping
+### 8-Phase Dependency Mapping
 ```mermaid
 graph TD
-    A[Phase 1: Foundation & Design] --> B[Phase 2: Core Development]
-    B --> C[Phase 3: Quality & Deployment]
+    P0[Phase 0: Project Conception] --> P1[Phase 1: Technology Stack Selection]
+    P1 --> P2[Phase 2: Project Setup]
+    P2 --> P3[Phase 3: Design and Architecture]
+    P3 --> P4[Phase 4: Core Development]
+    P4 --> P5[Phase 5: Quality Assurance]
+    P5 --> P6[Phase 6: Deployment Preparation]
+    P6 --> P7[Phase 7: Production Deployment]
+    P7 --> P8[Phase 8: Maintenance and Evolution]
 
-    A1[Phase 1.1: Project Setup & Infrastructure] --> A2[Phase 1.2: Technology Stack Selection & Evaluation]
-    A2 --> A3[Phase 1.3: Design Concept Generation & Evaluation]
-    A3 --> A4[Phase 1.4: Prototype Development & User Testing Setup]
-    A4 --> B1[Phase 2.1: Application Architecture & Foundation]
-    B1 --> B2[Phase 2.2: Essential User Interface & Experience]
-    B2 --> B3[Phase 2.3: Authentication, Security & Data Management]
-    B3 --> C1[Phase 3.1: Testing Framework & Quality Assurance]
-    C1 --> C2[Phase 3.2: Deployment Pipeline & Production Readiness]
+    FD[Feature Development Best Practices] --> P4
+    GW[Git Workflow and Policies] --> P2
+    GW --> P4
+    GW --> P5
+    CF[Core Features Documentation] --> P4
+    CF --> P5
+    TS[Troubleshooting System] --> P4
+    TS --> P5
+    TS --> P8
 ```
 
-### Risk Assessment Matrix
+### Risk Assessment Matrix by Phase
 | Phase | Risk Level | Mitigation Strategy | Contingency Plan |
 |-------|------------|-------------------|------------------|
-| Phase 1: Foundation & Design | Low | Proven [Technology Stack] and design methodologies | Alternative [infrastructure options] and simplified design concepts |
-| Phase 2: Core Development | Medium | Incremental feature development with user testing | Feature scope reduction and MVP approach |
-| Phase 3: Quality & Deployment | Medium | Comprehensive testing strategy and staged deployment | Extended testing phase and gradual rollout |
+| Phase 0: Project Conception | Low | Structured requirements gathering | Scope refinement and stakeholder realignment |
+| Phase 1: Technology Stack Selection | Low | Proven technology evaluation framework | Alternative technology stack options |
+| Phase 2: Project Setup | Low | Established setup procedures and Git workflow | Alternative infrastructure and simplified setup |
+| Phase 3: Design and Architecture | Medium | Design validation and architecture review | Simplified design and modular architecture |
+| Phase 4: Core Development | Medium | Feature development best practices and Git workflow | Feature scope reduction and methodology adjustment |
+| Phase 5: Quality Assurance | Medium | Comprehensive testing strategy | Extended testing phase and quality gate adjustment |
+| Phase 6: Deployment Preparation | Medium | Staged deployment preparation | Simplified deployment and extended preparation |
+| Phase 7: Production Deployment | High | Careful deployment with rollback procedures | Immediate rollback and issue resolution |
+| Phase 8: Maintenance and Evolution | Low | Continuous monitoring and improvement | Reactive maintenance and feature freeze |
 
-### Resource Allocation
-- **Development Time**: [X] hours/week team capacity
-- **AI Assistant Usage**: [Y] hours/week for complex implementations
-- **Testing Time**: [Z]% of development time ([Hours] hours/week)
-- **Documentation Time**: [Z]% of development time ([Hours] hours/week)
-- **Buffer Time**: [Z]% for unexpected issues and [external dependency] challenges
+### Resource Allocation by Methodology
 
-## Phase 1: Foundation & Design (Weeks 1-7)
+#### MVP/Rapid (2-4 weeks)
+- **Development Time**: [X] hours/week team capacity (1-2 developers)
+- **Feature Development**: Streamlined process, essential features only
+- **Git Workflow**: Simplified branching, fast integration
+- **Testing Time**: 20% of development time (basic coverage)
+- **Documentation Time**: 10% of development time (essential docs)
+- **Buffer Time**: 15% for unexpected issues
 
-**Duration**: 7 weeks
+#### Balanced/Standard (4-8 weeks)
+- **Development Time**: [X] hours/week team capacity (2-3 developers)
+- **Feature Development**: Standard lifecycle, comprehensive features
+- **Git Workflow**: Full branching strategy, code review process
+- **Testing Time**: 30% of development time (comprehensive coverage)
+- **Documentation Time**: 20% of development time (complete docs)
+- **Buffer Time**: 20% for unexpected issues and optimization
+
+#### Comprehensive/Enterprise (8-12 weeks)
+- **Development Time**: [X] hours/week team capacity (3-4 developers)
+- **Feature Development**: Detailed process, enterprise features
+- **Git Workflow**: Complex workflow, security and compliance
+- **Testing Time**: 40% of development time (extensive coverage)
+- **Documentation Time**: 25% of development time (comprehensive docs)
+- **Buffer Time**: 25% for unexpected issues and enterprise requirements
+
+## Project Lifecycle Implementation
+
+### Phase 0: Project Conception (Week 1)
+**Duration**: 1 week
 **Priority**: Critical
 **Dependencies**: None
 **Risk Level**: Low
-
-### Phase 1.1: Project Setup & Infrastructure (Weeks 1-2)
-**Duration**: 2 weeks
-**Status**: 🔄 Planned
+**Documentation**: `docs/project-lifecycle/00-project-conception/README.md`
 
 #### Overview
-This phase establishes the foundational development environment and project infrastructure. The goal is to create a robust, scalable project setup with industry-standard tooling and prepare for efficient development workflows.
+Transform initial ideas into well-defined project requirements with clear scope and success criteria. This phase establishes the foundation for all subsequent development work.
 
-#### Deliverables
+#### Key Deliverables
+- [ ] **Problem Definition and Solution Validation**
+  - Clear problem statement and target audience identification
+  - Solution approach validation and feasibility assessment
+  - Business requirements and success criteria definition
+  - Stakeholder identification and requirements gathering
+
+- [ ] **Initial Scope Definition and Constraint Analysis**
+  - Project scope boundaries and feature prioritization
+  - Technical constraints and resource limitations assessment
+  - Timeline constraints and delivery expectations
+  - Risk assessment and mitigation strategies
+
+#### Methodology-Specific Outcomes
+- **MVP/Rapid**: Essential problem definition, basic scope
+- **Balanced/Standard**: Comprehensive requirements, detailed scope
+- **Comprehensive/Enterprise**: Extensive analysis, enterprise requirements
+
+### Phase 1: Technology Stack Selection (Week 1.5-2)
+**Duration**: 0.5 weeks
+**Priority**: Critical
+**Dependencies**: Phase 0
+**Risk Level**: Low
+**Documentation**: `docs/project-lifecycle/01-technology-stack-selection/README.md`
+
+#### Overview
+Make informed technology decisions that will guide all subsequent development phases. Evaluate and select the optimal technical foundation for the project requirements.
+
+#### Key Deliverables
+- [ ] **Technology Evaluation and Selection**
+  - Frontend and backend technology comparison
+  - Database technology assessment and selection
+  - Development tooling and framework evaluation
+  - Integration and compatibility analysis
+
+- [ ] **Technology Decision Documentation**
+  - Technology selection rationale and trade-offs
+  - Performance implications and scalability projections
+  - Team expertise alignment and learning requirements
+  - Long-term maintenance and evolution considerations
+
+#### Methodology-Specific Approaches
+- **MVP/Rapid**: Conservative, proven technology choices
+- **Balanced/Standard**: Modern, well-supported technology mix
+- **Comprehensive/Enterprise**: Cutting-edge, enterprise-grade technology stack
+
+### Phase 2: Project Setup (Weeks 2-3)
+**Duration**: 1 week
+**Priority**: Critical
+**Dependencies**: Phase 1
+**Risk Level**: Low
+**Documentation**: `docs/project-lifecycle/02-project-setup/README.md`
+**Git Workflow**: `docs/project-lifecycle/git-workflow/README.md`
+
+#### Overview
+Establish the development environment and project infrastructure using selected technologies. Implement Git workflow and development best practices from the start.
+
+#### Key Deliverables
 - [ ] **Development Environment Setup**
-  - [Framework] project initialization with modern configuration
+  - [Framework] project initialization with selected configuration
   - [Language] strict mode configuration and compiler setup
   - [Linting Tool], [Formatting Tool], and pre-commit hooks configuration
-  - [Repository Platform] repository with proper .gitignore and README
+  - [Repository Platform] repository with Git workflow implementation
 
-- [ ] **Core Dependencies Installation**
-  - Package manager configuration ([Package Manager])
-  - Essential dependencies for [Framework] and [Language]
-  - Development dependencies for testing and code quality
-  - Security audit and vulnerability scanning setup
+- [ ] **Git Workflow Implementation**
+  - Branching strategy establishment per Git workflow documentation
+  - Pull request templates and code review process setup
+  - Commit message conventions implementation
+  - CI/CD pipeline initial configuration
 
-- [ ] **Project Structure & Architecture**
-  - Industry-standard folder structure implementation
+- [ ] **Project Structure & Architecture Foundation**
   - Feature-based architecture planning and setup
+  - Core features documentation structure establishment
   - Environment variable management and secrets handling
-  - Configuration files for different environments (dev, staging, prod)
+  - Configuration files for different environments
 
-- [ ] **Version Control & Collaboration Setup**
-  - Git workflow and branching strategy establishment
-  - Pull request templates and code review guidelines
-  - Issue templates and project management integration
-  - Documentation standards and contribution guidelines
-
-#### Reference Documentation
-**MANDATORY**: Project setup and infrastructure approaches are documented with alternative methodologies:
-- **Foundation**: `docs/sandbox/01-project-setup/00-project-setup-foundation.md`
-- **Methodology A**: `docs/sandbox/01-project-setup/01-monorepo-first-methodology.md` (Single repository, comprehensive setup approach)
-- **Methodology B**: `docs/sandbox/01-project-setup/02-microservices-architecture-methodology.md` (Distributed services, modular setup approach)
-- **Methodology C**: `docs/sandbox/01-project-setup/03-modular-monolith-methodology.md` (Hybrid modular, balanced setup approach)
-
-**Selection Criteria**: Choose methodology based on team size, project complexity, deployment requirements, and long-term maintenance considerations. Evaluate each approach against scalability needs and development workflow preferences.
+#### Git Workflow Integration
+- **Branching Strategy**: Implement methodology-specific branching per `docs/project-lifecycle/git-workflow/branching-strategies.md`
+- **Commit Conventions**: Follow standardized commit messages per `docs/project-lifecycle/git-workflow/commit-conventions.md`
+- **Review Process**: Establish PR workflow per `docs/project-lifecycle/git-workflow/pull-request-templates.md`
 
 #### Performance/Planning Targets
 - [ ] Project initialization completes within 30 minutes (setup target)
 - [ ] Development server starts within 10 seconds (performance target)
 - [ ] Build process completes within 2 minutes (efficiency target)
 - [ ] Zero security vulnerabilities in initial dependencies (security requirement)
+- [ ] Git workflow operational with first commits following conventions
 
 #### Acceptance Criteria
 - [ ] All dependencies install without conflicts or security warnings
 - [ ] Development server starts successfully with hot reload functionality
 - [ ] [Language] compilation passes without errors in strict mode
-- [ ] Linting and formatting tools execute without violations
-- [ ] Version control workflow documented and tested
+- [ ] Git workflow implemented and documented
+- [ ] Initial project structure follows feature-based architecture
+- [ ] CI/CD pipeline configured and operational
 
-#### AI Assistant Prompts
-```
-"Set up [Project Name] development environment with [Technology Stack]:
-- [Framework] configuration with modern best practices and performance optimization
-- [Language] strict mode setup with comprehensive type checking
-- [Package Manager] dependency management with security scanning
-- Development tooling including [Linting Tool], [Formatting Tool], and testing framework
-- Project architecture planning for scalable feature development
-- Version control workflow and collaboration guidelines establishment"
-```
-
-### Phase 1.2: Technology Stack Selection & Evaluation (Weeks 2.5-3.5)
+### Phase 3: Design and Architecture (Weeks 3-4)
 **Duration**: 1 week
-**Status**: 🔄 Planned
+**Priority**: High
+**Dependencies**: Phase 2
+**Risk Level**: Medium
+**Documentation**: `docs/project-lifecycle/03-design-and-architecture/README.md`
 
 #### Overview
-This phase focuses on comprehensive technology stack evaluation and selection to establish the optimal technical foundation for the project. The goal is to analyze and compare different technology combinations, assess their suitability for project requirements, and make informed decisions that will guide all subsequent development phases.
+Create comprehensive system design and architecture that will guide implementation. Establish design patterns, data models, and integration strategies.
 
-#### Deliverables
-- [ ] **Frontend Technology Evaluation**
-  - [Framework Options] comparison and performance benchmarking
-  - State management solution analysis and selection criteria
-  - Build tooling and bundler evaluation for development efficiency
-  - CSS framework and styling approach assessment
+#### Key Deliverables
+- [ ] **System Architecture Design**
+  - Application architecture and component design
+  - Data model and database schema design
+  - API design and integration patterns
+  - Security architecture and authentication design
 
-- [ ] **Backend Technology Evaluation**
-  - Runtime environment and framework performance analysis
-  - Database technology comparison (SQL vs NoSQL vs Hybrid)
-  - API architecture evaluation (REST vs GraphQL vs gRPC)
-  - Authentication and security framework assessment
+- [ ] **User Experience and Interface Design**
+  - User workflow and experience design
+  - Interface design and component library planning
+  - Responsive design and accessibility considerations
+  - Design system and styling architecture
 
-- [ ] **Development Tooling Assessment**
-  - Testing framework evaluation and coverage analysis
-  - CI/CD platform comparison and integration capabilities
-  - Monitoring and logging solution assessment
-  - Development environment and debugging tool selection
+#### Core Features Integration Planning
+- **Authentication**: Design authentication flows and security patterns
+- **Database**: Plan database schema and data relationships
+- **API**: Design API endpoints and data contracts
+- **State Management**: Plan state architecture and data flow
+- **Error Handling**: Design error handling and user feedback patterns
+- **Testing**: Plan testing strategy and coverage approach
 
-- [ ] **Technology Integration & Compatibility Analysis**
-  - Cross-platform compatibility and deployment considerations
-  - Third-party service integration and vendor lock-in assessment
-  - Performance implications and scalability projections
-  - Team expertise alignment and learning curve evaluation
+#### Methodology-Specific Depth
+- **MVP/Rapid**: Basic architecture, essential design patterns
+- **Balanced/Standard**: Comprehensive architecture, detailed design
+- **Comprehensive/Enterprise**: Advanced architecture, enterprise patterns
 
-#### Reference Documentation
-**MANDATORY**: Technology stack selection with three alternative strategic methodologies:
-- **Foundation**: `docs/sandbox/02-tech-stack/00-tech-stack-foundation.md`
-- **Methodology A**: `docs/sandbox/02-tech-stack/01-conservative-proven-methodology.md` (Stable, battle-tested technology approach)
-- **Methodology B**: `docs/sandbox/02-tech-stack/02-modern-cutting-edge-methodology.md` (Latest, innovative technology approach)
-- **Methodology C**: `docs/sandbox/02-tech-stack/03-hybrid-balanced-methodology.md` (Mixed stable and modern technology approach)
-
-**Selection Criteria**: Evaluate methodologies based on project timeline, team expertise, long-term maintenance requirements, and innovation goals. Consider community support, documentation quality, and ecosystem maturity when choosing the optimal technology strategy approach.
-
-#### Performance/Planning Targets
-- [ ] Technology evaluation completes within 3 business days (efficiency target)
-- [ ] Selected stack supports <2 second build times for development (performance target)
-- [ ] Technology decisions documented with clear rationale (documentation requirement)
-- [ ] Stack compatibility verified across all target platforms (compatibility requirement)
-
-#### Acceptance Criteria
-- [ ] Frontend and backend technology selections documented with justification
-- [ ] Development tooling choices align with team workflow and project needs
-- [ ] Technology integration risks identified and mitigation strategies planned
-- [ ] Selected stack supports all planned features and scalability requirements
-- [ ] Team training needs assessed and learning resources identified
-
-#### AI Assistant Prompts
-```
-"Evaluate and recommend technology stack for [Project Name] targeting [Platform/Audience]:
-- Compare [Frontend Framework Options] for performance, ecosystem, and team expertise alignment
-- Analyze [Backend Technology Options] for scalability, security, and development efficiency
-- Assess [Database Options] for data requirements, query patterns, and consistency needs
-- Evaluate [Testing Framework Options] for coverage, integration, and automation capabilities
-- Consider long-term maintenance, community support, and technology evolution trends
-- Provide decision matrix with pros/cons analysis for each technology choice"
-```
-### Phase 1.3: [Feature/Component Name] (Weeks X-Y)
-**Duration**: [X] weeks
-**Status**: 🔄 Planned
+### Phase 4: Core Development (Weeks 4-8)
+**Duration**: 4 weeks (methodology-dependent)
+**Priority**: Critical
+**Dependencies**: Phase 3
+**Risk Level**: Medium
+**Documentation**: `docs/project-lifecycle/04-core-development/README.md`
+**Feature Development**: `docs/project-lifecycle/feature-development/README.md`
+**Git Workflow**: `docs/project-lifecycle/git-workflow/README.md`
 
 #### Overview
-[Brief description of what this phase accomplishes and its goals]
+Implement core application features using established patterns from core features documentation. This is the primary implementation phase where requirements are transformed into working application.
 
-#### Deliverables
-- [ ] **[Deliverable Category 1]**
-  - [Specific deliverable 1]
-  - [Specific deliverable 2]
-  - [Specific deliverable 3]
-  - [Specific deliverable 4]
+#### Key Deliverables by Methodology
 
-- [ ] **[Deliverable Category 2]**
-  - [Specific deliverable 1]
-  - [Specific deliverable 2]
-  - [Specific deliverable 3]
-  - [Specific deliverable 4]
+**MVP/Rapid (1-2 weeks)**:
+- [ ] **Essential Features Implementation**
+  - Core feature functionality using streamlined feature development process
+  - Basic authentication and data persistence
+  - Simple UI components and user workflows
+  - Essential error handling and basic testing
 
-#### Reference Documentation
-**MANDATORY**: [Feature/Component name] with three alternative [implementation/approach] methodologies:
-- **Foundation**: `docs/sandbox/[phase-number]-[phase-folder]/00-[phase-name]-foundation.md`
-- **Methodology A**: `docs/sandbox/[phase-number]-[phase-folder]/01-[methodology-a-name].md` ([Brief description of approach A])
-- **Methodology B**: `docs/sandbox/[phase-number]-[phase-folder]/02-[methodology-b-name].md` ([Brief description of approach B])
-- **Methodology C**: `docs/sandbox/[phase-number]-[phase-folder]/03-[methodology-c-name].md` ([Brief description of approach C])
+**Balanced/Standard (2-3 weeks)**:
+- [ ] **Comprehensive Features Implementation**
+  - Complete feature set using standard feature development lifecycle
+  - Full authentication system and optimized database layer
+  - Responsive UI components and complete user workflows
+  - Comprehensive error handling and testing coverage
 
-**Selection Criteria**: [Guidance for choosing between methodologies based on project constraints, team expertise, timeline, and business requirements]
+**Comprehensive/Enterprise (3-4 weeks)**:
+- [ ] **Enterprise Features Implementation**
+  - Advanced feature set using detailed feature development process
+  - Enterprise authentication and advanced database architecture
+  - Advanced UI/UX and complex user workflows
+  - Enterprise error handling and extensive testing
 
-#### Performance/Planning Targets
-- [ ] [Performance target 1] (target type)
-- [ ] [Performance target 2] (target type)
-- [ ] [Performance target 3] (target type)
-- [ ] [Performance target 4] (requirement type)
+#### Feature Development Integration
+- **Feature Planning**: Use `docs/project-lifecycle/feature-development/feature-planning-template.md`
+- **Development Workflow**: Follow `docs/project-lifecycle/feature-development/README.md` guidelines
+- **Feature Completion**: Validate using `docs/project-lifecycle/feature-development/feature-completion-checklist.md`
+- **Core Features**: Integrate with `docs/core-features/[feature]/README.md` documentation
 
-#### Acceptance Criteria
-- [ ] [Acceptance criterion 1]
-- [ ] [Acceptance criterion 2]
-- [ ] [Acceptance criterion 3]
-- [ ] [Acceptance criterion 4]
-- [ ] [Acceptance criterion 5]
+#### Git Workflow Integration
+- **Branch Management**: Follow methodology-specific branching strategies
+- **Commit Standards**: Use standardized commit message conventions
+- **Code Review**: Implement PR workflow with methodology-specific templates
+- **Integration**: Manage feature integration and conflict resolution
 
-#### AI Assistant Prompts
-```
-"Implement [feature/component] for [Project Name]:
-- [Requirement 1] with [specific configuration]
-- [Requirement 2] for [specific integration]
-- [Requirement 3] with [design approach]
-- [Requirement 4] compliance with [standard]
-- [Requirement 5] optimization for [performance target]
-- [Requirement 6] and [additional considerations]"
-```
+#### Core Features Implementation
+- [ ] **Authentication System** (`docs/core-features/authentication/`)
+- [ ] **Database Layer** (`docs/core-features/database/`)
+- [ ] **API Layer** (`docs/core-features/api/`)
+- [ ] **State Management** (`docs/core-features/state-management/`)
+- [ ] **Error Handling** (`docs/core-features/error-handling/`)
+- [ ] **Testing Suite** (`docs/core-features/testing/`)
+
+#### Quality Gates and Validation
+- [ ] Feature completion checklists validated
+- [ ] Code review and quality standards met
+- [ ] Testing coverage meets methodology requirements
+- [ ] Performance targets achieved
+- [ ] Security requirements satisfied
+- [ ] Documentation updated and complete
+### Phase 5: Quality Assurance (Weeks 8-9)
+**Duration**: 1 week (methodology-dependent)
+**Priority**: Critical
+**Dependencies**: Phase 4
+**Risk Level**: Medium
+**Documentation**: `docs/project-lifecycle/05-quality-assurance/README.md`
+
+#### Overview
+Comprehensive testing and validation to ensure application quality, performance, and reliability before deployment preparation.
+
+#### Key Deliverables
+- [ ] **Testing and Validation**
+  - Comprehensive testing execution (unit, integration, E2E)
+  - Performance testing and optimization
+  - Security testing and vulnerability assessment
+  - Accessibility testing and compliance validation
+  - User acceptance testing (UAT) execution
+
+- [ ] **Quality Gates and Metrics**
+  - Quality metrics dashboard and reporting
+  - Pre-deployment verification and validation
+  - Performance benchmarking and optimization
+  - Security audit and compliance verification
+
+#### Methodology-Specific Testing
+- **MVP/Rapid**: Essential testing, basic performance validation
+- **Balanced/Standard**: Comprehensive testing, performance optimization
+- **Comprehensive/Enterprise**: Extensive testing, enterprise validation
+
+### Phase 6: Deployment Preparation (Weeks 9-10)
+**Duration**: 1 week
+**Priority**: High
+**Dependencies**: Phase 5
+**Risk Level**: Medium
+**Documentation**: `docs/project-lifecycle/06-deployment-preparation/README.md`
+
+#### Overview
+Prepare production environment and establish deployment procedures for reliable application deployment.
+
+#### Key Deliverables
+- [ ] **Production Environment Setup**
+  - Production environment configuration and setup
+  - Deployment pipeline configuration and automation
+  - Monitoring and alerting implementation
+  - Security hardening and compliance verification
+
+- [ ] **Deployment Procedures**
+  - Backup and recovery procedures
+  - Go-live checklist and rollback procedures
+  - Performance monitoring and alerting setup
+  - Production support procedures establishment
+
+### Phase 7: Production Deployment (Week 10)
+**Duration**: 1-3 days
+**Priority**: Critical
+**Dependencies**: Phase 6
+**Risk Level**: High
+**Documentation**: `docs/project-lifecycle/07-production-deployment/README.md`
+
+#### Overview
+Execute go-live procedures and establish production operations with careful monitoring and validation.
+
+#### Key Deliverables
+- [ ] **Production Deployment Execution**
+  - Production deployment execution and validation
+  - Monitoring and alerting activation
+  - Post-deployment validation and performance verification
+  - Production support procedures activation
+
+- [ ] **Go-Live Management**
+  - Performance baseline establishment
+  - User communication and rollout management
+  - Incident response procedures activation
+  - Success metrics monitoring and reporting
+
+### Phase 8: Maintenance and Evolution (Ongoing)
+**Duration**: Ongoing
+**Priority**: Medium
+**Dependencies**: Phase 7
+**Risk Level**: Low
+**Documentation**: `docs/project-lifecycle/08-maintenance-and-evolution/README.md`
+
+#### Overview
+Long-term lifecycle management, feature evolution, and system optimization for continued success.
+
+#### Key Deliverables
+- [ ] **Continuous Operations**
+  - Performance monitoring and continuous optimization
+  - Security updates and patch management
+  - User feedback collection and integration
+  - System scaling and infrastructure evolution
+
+- [ ] **Evolution and Enhancement**
+  - Feature enhancement and evolution planning
+  - Technical debt management and refactoring
+  - Long-term strategic planning and technology evolution
+  - Knowledge management and team development
+
+#### Integration with Supporting Systems
+- **Feature Development**: Ongoing feature development using established best practices
+- **Git Workflow**: Continued use of Git workflow for maintenance and enhancements
+- **Troubleshooting**: Active use of troubleshooting system for issue resolution
+- **Core Features**: Continuous enhancement of core features documentation
 
 ---
 
 ## Template Usage Instructions
 
-### How to Use This Template
+### How to Use This Enhanced Template
 
-1. **Complete Pre-Development Planning**: Start with Implementation Planning & Methodology Selection before any development
+1. **Complete Project Lifecycle Framework Planning**: Start with Phase 0 (Project Conception) following the complete 8-phase framework
 2. **Replace All Placeholders**: Search for text in square brackets `[like this]` and replace with project-specific information
-3. **Select Appropriate Methodology**: Use the decision matrix to choose between MVP/Rapid (A), Balanced/Standard (B), or Comprehensive/Enterprise (C)
-4. **Customize Phase Structure**: Adjust phases based on selected methodology timeline (A: 2-4 weeks, B: 4-8 weeks, C: 8-12 weeks)
-5. **Mandatory Reference Documentation**: Every phase MUST include the Reference Documentation section with three methodologies
+3. **Select Appropriate Methodology**: Use the decision matrix to choose between MVP/Rapid, Balanced/Standard, or Comprehensive/Enterprise
+4. **Follow 8-Phase Structure**: Implement all phases (0-8) with methodology-specific timelines and depth
+5. **Integrate Supporting Documentation**: Use Feature Development Best Practices and Git Workflow documentation throughout
 6. **Implement Progress Tracking**: Use provided templates for milestone validation and progress tracking
 7. **Monitor Scope and Timeline**: Utilize validation checkpoints and scope adjustment points to prevent scope creep
-8. **Validate Completeness**: Use the enhanced Reference Documentation Validation Checklist for each phase
+8. **Validate Completeness**: Use the enhanced validation checklists for each phase
 
 ### Critical Template Requirements
 
-#### Pre-Development Planning Compliance
-- [ ] Implementation Planning & Methodology Selection completed before development starts
-- [ ] Decision matrix completed with weighted scores for all methodologies
-- [ ] Team capacity validated against selected methodology requirements
-- [ ] Success probability rating documented (minimum 70% required)
-- [ ] Risk assessment completed for chosen methodology
+#### Project Lifecycle Framework Compliance
+- [ ] All 8 phases (0-8) implemented following project lifecycle documentation
+- [ ] Phase 0 (Project Conception) completed before any development starts
+- [ ] Phase 1 (Technology Stack Selection) completed with methodology selection
+- [ ] Phase 2 (Project Setup) includes Git workflow implementation
+- [ ] Phase 4 (Core Development) integrates Feature Development Best Practices
+- [ ] All phases reference appropriate core features documentation
+- [ ] Troubleshooting system integration planned and implemented
 
-#### Reference Documentation Compliance
-- [ ] Every phase includes Reference Documentation section
-- [ ] Three distinct methodologies (A: MVP/Rapid, B: Balanced/Standard, C: Comprehensive/Enterprise) provided
-- [ ] Each methodology includes specific scope boundaries and timeline estimates
-- [ ] Development roadmap with week-by-week milestones included for each methodology
-- [ ] Validation checkpoints and scope adjustment points identified
-- [ ] Selection criteria explain trade-offs between methodologies
-- [ ] Documentation follows the standardized folder structure: `docs/sandbox/[phase-number]-[phase-folder]/`
-- [ ] Foundation document (00-) and three methodology documents (01-, 02-, 03-) exist
+#### Feature Development Integration Compliance
+- [ ] Phase 4 uses Feature Development Best Practices documentation
+- [ ] Feature planning templates used for all features
+- [ ] Feature completion checklists validated for all features
+- [ ] Core features integration documented and implemented
+- [ ] Quality gates and standards applied consistently
+- [ ] Feature development workflow integrated with Git workflow
+
+#### Git Workflow Integration Compliance
+- [ ] Git workflow policies implemented from Phase 2 onwards
+- [ ] Branching strategies follow methodology-specific guidelines
+- [ ] Commit message conventions implemented and followed
+- [ ] Pull request templates used for all code reviews
+- [ ] Merge strategies and conflict resolution procedures established
+- [ ] CI/CD integration with Git workflow implemented
+
+#### Supporting Documentation Integration Compliance
+- [ ] Core features documentation referenced and integrated
+- [ ] Troubleshooting system workflows established
+- [ ] Knowledge management processes implemented
+- [ ] Cross-system integration documented and validated
 
 #### Progress Tracking and Validation Compliance
 - [ ] Progress tracking templates implemented for selected methodology
@@ -675,52 +898,64 @@ This phase focuses on comprehensive technology stack evaluation and selection to
 #### Quality Assurance Integration
 - [ ] Performance/Planning Targets are specific and measurable
 - [ ] Acceptance Criteria are clear and testable
-- [ ] AI Assistant Prompts are detailed and actionable
 - [ ] Dependencies between phases are clearly mapped
 - [ ] Risk assessment includes mitigation strategies
+- [ ] Quality gates integrated with Feature Development best practices
 
 #### Customization Guidelines
 - [ ] Technology stack placeholders are replaced with actual technologies
 - [ ] Project-specific features and requirements are incorporated
 - [ ] Timeline estimates reflect realistic development capacity
 - [ ] Success metrics align with business objectives
-- [ ] Documentation requirements match team workflow
+- [ ] Documentation requirements match team workflow and project lifecycle framework
 
-### Template Validation Checklist
+### Enhanced Template Validation Checklist
 
 Before using this template for a new project, ensure:
 
-**Pre-Development Planning**
-- [ ] Implementation Planning & Methodology Selection process defined
-- [ ] Decision matrix criteria weights align with project priorities
-- [ ] Team capacity assessment methodology established
-- [ ] Success probability calculation method documented
+**Project Lifecycle Framework Integration**
+- [ ] All 8 phases (0-8) are included and properly sequenced
+- [ ] Phase documentation references are correct and accessible
+- [ ] Feature Development Best Practices integration is planned
+- [ ] Git Workflow and Policies integration is implemented
+- [ ] Core features documentation is referenced appropriately
+- [ ] Troubleshooting system integration is established
 
-**Methodology Definition**
-- [ ] All three methodologies have clear scope boundaries and feature inclusion/exclusion criteria
-- [ ] Timeline estimates are realistic for each methodology (A: 2-4 weeks, B: 4-8 weeks, C: 8-12 weeks)
+**Methodology Definition and Scope**
+- [ ] All three methodologies have clear scope boundaries and timeline estimates
+- [ ] MVP/Rapid methodology: 2-4 weeks total, streamlined processes
+- [ ] Balanced/Standard methodology: 4-8 weeks total, comprehensive approach
+- [ ] Comprehensive/Enterprise methodology: 8-12 weeks total, detailed implementation
 - [ ] Resource allocation requirements specified for each methodology
-- [ ] Development roadmaps include week-by-week milestones and validation checkpoints
+- [ ] Methodology-specific feature development approaches documented
 
-**Project Customization**
+**Documentation System Integration**
+- [ ] Feature Development templates and checklists are referenced
+- [ ] Git workflow documentation is integrated throughout phases
+- [ ] Core features documentation links are accurate and complete
+- [ ] Troubleshooting workflows are established and documented
+- [ ] Knowledge management processes are defined and integrated
+
+**Project Customization and Validation**
 - [ ] All `[placeholder text]` has been replaced with project-specific content
-- [ ] Phase dependencies are logical and properly sequenced
-- [ ] Reference Documentation sections are complete for all phases
-- [ ] Performance targets are realistic and measurable
-- [ ] AI Assistant prompts are tailored to the specific technology stack
+- [ ] Phase dependencies are logical and follow the 8-phase structure
+- [ ] Performance targets are realistic and methodology-appropriate
+- [ ] Success metrics align with business objectives and methodology scope
+- [ ] Timeline estimates include appropriate buffer time
 
-**Risk Management and Quality**
-- [ ] Risk assessment covers technical, project, and external risks
-- [ ] Early warning indicators for scope creep defined
-- [ ] Quality gates align with project quality standards
-- [ ] Success metrics are specific, measurable, and time-bound
-- [ ] Scope adjustment decision points clearly identified
+**Quality and Risk Management**
+- [ ] Risk assessment covers all phases and methodology-specific risks
+- [ ] Quality gates align with Feature Development best practices
+- [ ] Early warning indicators for scope creep defined for each methodology
+- [ ] Validation checkpoints align with project lifecycle milestones
+- [ ] Scope adjustment decision points clearly identified and documented
 
 **Resource and Timeline Validation**
-- [ ] Resource allocation reflects actual team capacity and constraints
-- [ ] Timeline estimates include buffer time for scope adjustments
-- [ ] Validation checkpoints align with project milestones
-- [ ] Progress tracking templates customized for project needs
+- [ ] Resource allocation reflects actual team capacity and methodology requirements
+- [ ] Timeline estimates are realistic for selected methodology
+- [ ] Feature development workflows are integrated with overall timeline
+- [ ] Git workflow overhead is accounted for in time estimates
+- [ ] Progress tracking templates are customized for project and methodology needs
 
 ---
 
@@ -767,6 +1002,68 @@ interface [ProjectName]TestingFramework {
 
 ---
 
-**End of Template**
+## Integration Summary
 
-*This template ensures comprehensive roadmap creation with mandatory Reference Documentation sections, providing multiple validated approaches for each development phase while maintaining consistency and completeness across all project roadmaps.*
+### Complete Documentation System Integration
+
+This enhanced roadmap template provides seamless integration with:
+
+#### Project Lifecycle Framework (8 Phases)
+- **Phase 0**: Project Conception - `docs/project-lifecycle/00-project-conception/`
+- **Phase 1**: Technology Stack Selection - `docs/project-lifecycle/01-technology-stack-selection/`
+- **Phase 2**: Project Setup - `docs/project-lifecycle/02-project-setup/`
+- **Phase 3**: Design and Architecture - `docs/project-lifecycle/03-design-and-architecture/`
+- **Phase 4**: Core Development - `docs/project-lifecycle/04-core-development/`
+- **Phase 5**: Quality Assurance - `docs/project-lifecycle/05-quality-assurance/`
+- **Phase 6**: Deployment Preparation - `docs/project-lifecycle/06-deployment-preparation/`
+- **Phase 7**: Production Deployment - `docs/project-lifecycle/07-production-deployment/`
+- **Phase 8**: Maintenance and Evolution - `docs/project-lifecycle/08-maintenance-and-evolution/`
+
+#### Supporting Documentation Systems
+- **Feature Development Best Practices** - `docs/project-lifecycle/feature-development/`
+  - Feature planning templates and completion checklists
+  - Development workflow and quality gates
+  - Core features integration guidance
+- **Git Workflow and Policies** - `docs/project-lifecycle/git-workflow/`
+  - Branching strategies and commit conventions
+  - Pull request templates and review processes
+  - Merge strategies and conflict resolution
+
+#### Core Features Documentation
+- **Authentication** - `docs/core-features/authentication/`
+- **Database** - `docs/core-features/database/`
+- **API** - `docs/core-features/api/`
+- **State Management** - `docs/core-features/state-management/`
+- **Error Handling** - `docs/core-features/error-handling/`
+- **Testing** - `docs/core-features/testing/`
+
+#### Troubleshooting and Knowledge Management
+- **Active Blockers** - `docs/development/troubleshooting/active-blockers/`
+- **Resolved Issues** - `docs/development/troubleshooting/resolved-issues/`
+- **Knowledge Base** - `docs/development/troubleshooting/`
+
+### Methodology-Specific Implementation Guidance
+
+#### MVP/Rapid (2-4 weeks)
+- Streamlined 8-phase implementation with essential deliverables
+- Basic Feature Development workflow with simplified quality gates
+- Essential Git workflow with fast integration processes
+- Core features implementation with minimal customization
+
+#### Balanced/Standard (4-8 weeks)
+- Complete 8-phase implementation with comprehensive deliverables
+- Standard Feature Development lifecycle with balanced quality gates
+- Full Git workflow with comprehensive branching and review processes
+- Core features implementation with moderate customization
+
+#### Comprehensive/Enterprise (8-12 weeks)
+- Detailed 8-phase implementation with extensive deliverables
+- Advanced Feature Development process with enterprise quality gates
+- Complex Git workflow with security and compliance considerations
+- Core features implementation with extensive customization and optimization
+
+---
+
+**End of Enhanced Template**
+
+*This enhanced template ensures comprehensive roadmap creation with full integration of the 8-phase Project Lifecycle Framework, Feature Development Best Practices, Git Workflow and Policies, and all supporting documentation systems. It provides methodology-specific guidance while maintaining consistency and completeness across all project roadmaps, bridging high-level planning with practical development execution.*

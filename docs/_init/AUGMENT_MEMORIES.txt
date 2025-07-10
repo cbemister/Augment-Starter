@@ -50,6 +50,49 @@ Maintain this file throughout development to ensure consistent AI assistance and
 # File Naming Conventions
 - [PROJECT_NAME] enforces consistent file naming conventions across the codebase to ensure organization and maintainability. Component files use PascalCase (e.g., UserProfile.tsx, NavigationMenu.vue, ProductCard.jsx), utility functions use camelCase (e.g., formatDate.ts, validateEmail.js, calculateTotal.py), test files mirror source files with .test or .spec suffix (e.g., UserProfile.test.tsx, formatDate.spec.js), documentation files use kebab-case (e.g., api-documentation.md, deployment-guide.md, feature-requirements.md), configuration files use lowercase with appropriate extensions (e.g., package.json, tsconfig.json, .env.local), directory names use kebab-case for features and camelCase for utilities (e.g., user-management/, productCatalog/, src/utils/), API route files follow framework conventions (e.g., /api/users/[id].ts, /api/products/route.py), and database migration files include timestamps (e.g., 2024-01-15_create_users_table.sql, 20240115_add_product_index.py). Avoid abbreviations, use descriptive names, maintain consistency within file type categories, and follow [FRAMEWORK_SPECIFIC] naming conventions where applicable.
 
+# Troubleshooting and Knowledge Management System
+
+## Troubleshooting Workflow Rules
+- **Active Blockers Directory** (`docs/development/troubleshooting/active-blockers/`): Create new blocker files immediately when encountering issues that halt development for >15 minutes. Use format `YYYY-MM-DD_blocker_[component]_[framework].md` with mandatory sections: Problem Description, Impact Assessment (Critical/High/Medium/Low), Attempted Solutions, Current Status, Next Steps, and Time Investment. Update status every 30 minutes during active troubleshooting.
+- **Resolved Issues Directory** (`docs/development/troubleshooting/resolved-issues/`): Move completed blocker files here with added Resolution section containing final solution, root cause analysis, time to resolution, and prevention measures. Archive within 24 hours of resolution.
+- **Methodology Decisions Directory** (`docs/development/troubleshooting/methodology-decisions/`): Document all methodology selection decisions (MVP/Rapid vs Balanced/Standard vs Comprehensive/Enterprise) with rationale, trade-offs considered, success criteria, and rollback conditions. Required for any methodology switches during development.
+- **Framework-Specific Directory** (`docs/development/troubleshooting/framework-specific/`): Maintain separate subdirectories for React, Vue, Angular, and vanilla JS with framework-specific troubleshooting patterns, common issues, and resolution strategies. Include CSS Modules integration patterns for each framework.
+
+## Progress Tracking Guidelines
+- **Context Preservation** (`docs/progress/context-preservation/`): Create session handoff documents using format `YYYY-MM-DD_session_[feature]_[status].md` containing current task state, completed work, pending decisions, known issues, and next immediate steps. Update before ending each development session.
+- **Blocker Impact Documentation** (`docs/progress/blocker-impact/`): Track cumulative impact of blockers on project timeline with weekly impact assessments, methodology adjustment recommendations, and scope modification proposals. Include time-boxed decision points at 15/30/60 minute thresholds.
+- **Decision Logging** (`docs/progress/decision-logs/`): Record all architectural, technical, and methodology decisions with timestamp, decision maker, alternatives considered, rationale, success metrics, and review schedule. Required for decisions affecting >4 hours of development time.
+
+## Knowledge Management Protocols
+- **Lessons Learned** (`docs/knowledge/lessons-learned/`): Capture insights from completed features, resolved blockers, and methodology implementations. Use format `YYYY-MM-DD_lesson_[category]_[framework].md` with sections: Context, Challenge, Solution, Outcome, Applicability, and Prevention Strategy.
+- **Prevention Strategies** (`docs/knowledge/prevention-strategies/`): Document systematic approaches to prevent recurring issues. Include early warning indicators, proactive measures, monitoring strategies, and automated checks. Update after every major blocker resolution.
+- **Framework Patterns** (`docs/knowledge/framework-patterns/`): Build reusable patterns for CSS Modules + design system implementations across React, Vue, Angular, and vanilla JS. Include code templates, configuration examples, and integration guides.
+
+## File Naming and Organization Standards
+- **Standardized Naming Convention**: All troubleshooting and knowledge management files use format `YYYY-MM-DD_[type]_[component]_[framework].md` where type includes: blocker, resolved, lesson, pattern, decision, session, impact.
+- **Categorization System**: Use consistent tags in file headers: [CRITICAL], [HIGH], [MEDIUM], [LOW] for priority; [CSS-MODULES], [DESIGN-SYSTEM], [FRAMEWORK-INTEGRATION] for technical scope; [MVP], [BALANCED], [COMPREHENSIVE] for methodology alignment.
+- **Cross-Reference Requirements**: Include related file references in each document using relative paths. Maintain bidirectional links between active-blockers and resolved-issues, lessons-learned and prevention-strategies.
+
+## Methodology Integration Requirements
+- **MVP/Rapid Methodology** (2-4 weeks): Focus on critical blockers only, 15-minute decision thresholds, minimal documentation overhead, rapid iteration cycles. Prioritize speed over comprehensive documentation.
+- **Balanced/Standard Methodology** (4-8 weeks): Standard blocker tracking, 30-minute decision thresholds, moderate documentation requirements, balanced quality and speed approach.
+- **Comprehensive/Enterprise Methodology** (8-12 weeks): Full documentation requirements, 60-minute decision thresholds, extensive knowledge capture, thorough prevention strategy development.
+- **Time Threshold Enforcement**: Implement methodology-specific escalation procedures when troubleshooting exceeds time limits. Include automatic methodology reassessment triggers.
+
+## Cross-Directory Integration Rules
+- **Knowledge Flow Pipeline**: Active Blockers → Resolved Issues → Lessons Learned → Prevention Strategies → Framework Patterns. Each transition requires specific documentation updates and cross-references.
+- **Documentation Consistency**: Maintain consistent terminology, formatting, and cross-references across all directories. Use shared glossary and template files.
+- **Regular Maintenance**: Weekly review of active blockers for status updates, monthly archival of resolved issues, quarterly review of prevention strategies effectiveness.
+
+## AI Assistant Collaboration Guidelines
+- **Session Initialization**: AI assistants must review relevant files from `docs/progress/context-preservation/` and `docs/development/troubleshooting/active-blockers/` before starting work on existing features.
+- **Blocker Documentation**: When encountering new issues, AI assistants must create blocker files in active-blockers directory with complete problem description, attempted solutions, and impact assessment.
+- **Knowledge Utilization**: Reference existing patterns from `docs/knowledge/framework-patterns/` and prevention strategies before implementing new solutions. Cite specific files and sections in implementation decisions.
+- **Progress Updates**: Update context preservation files at natural breakpoints (feature completion, blocker resolution, methodology decisions) with current state and next steps.
+- **Cross-Reference Maintenance**: When resolving blockers or implementing solutions, update related files in lessons-learned and prevention-strategies directories with new insights and improved approaches.
+- **Methodology Adherence**: Follow time thresholds and documentation requirements specific to current methodology (MVP/Balanced/Comprehensive). Escalate methodology changes through proper decision logging process.
+- **Quality Assurance**: Before completing work sessions, verify all documentation is properly cross-referenced, categorized, and follows established naming conventions. Ensure knowledge flow pipeline is maintained.
+
 ---
 
 # Placeholder Reference Guide

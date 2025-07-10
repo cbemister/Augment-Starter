@@ -1,12 +1,16 @@
 # Git Branches Development Strategy & Static Deployment Guide
 
-**Version**: 1.0  
-**Created**: July 2025  
+**Version**: 1.0
+**Created**: July 2025
 **Purpose**: Development workflow and deployment strategy for sandbox-driven development
+
+**Enhanced Integration**: This guide now integrates with the comprehensive [Git Workflow and Policies](../project-lifecycle/git-workflow/README.md) documentation system, providing specialized guidance for sandbox-driven development while maintaining consistency with the overall Git workflow framework.
 
 ## Overview
 
 This guide outlines the git branching strategy and static deployment approach for projects using the docs-driven enhancement methodology. The strategy supports parallel development of alternative approaches while enabling rapid deployment and testing of different concepts.
+
+**Integration with Project Lifecycle**: This branching strategy aligns with the [8-phase project lifecycle framework](../project-lifecycle/README.md) and supports methodology-specific development approaches (MVP/Rapid, Balanced/Standard, Comprehensive/Enterprise).
 
 ## Git Branches Development Strategy
 
@@ -26,14 +30,15 @@ main
 
 #### 1. **Main Branch** (`main`)
 - **Purpose**: Production-ready code only
-- **Protection**: Protected branch with required reviews
+- **Protection**: Protected branch with required reviews per [Git Workflow policies](../project-lifecycle/git-workflow/README.md)
 - **Merges**: Only from `release/*` branches after full testing
 - **Deployment**: Automatic deployment to production environment
+- **Integration**: Follows [branching strategies](../project-lifecycle/git-workflow/branching-strategies.md) for production releases
 
 #### 2. **Develop Branch** (`develop`)
 - **Purpose**: Integration branch for completed features
-- **Merges**: From `feature/*` branches after methodology selection
-- **Testing**: Continuous integration and automated testing
+- **Merges**: From `feature/*` branches after methodology selection following [Git Workflow guidelines](../project-lifecycle/git-workflow/README.md)
+- **Testing**: Continuous integration and automated testing per project lifecycle requirements
 - **Deployment**: Automatic deployment to staging environment
 
 #### 3. **Sandbox Branches** (`sandbox/[feature-name]-methodology-[a|b|c]`)

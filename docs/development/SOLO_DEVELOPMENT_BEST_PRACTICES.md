@@ -4,6 +4,10 @@
 
 This document presents proven development methodologies, documentation standards, and quality assurance practices extracted from successful software projects. These guidelines are designed to be project-agnostic and can be adapted to any software development context while maintaining systematic approaches to quality, documentation, and team collaboration.
 
+**Integration with Project Lifecycle Framework**: This guide integrates seamlessly with the [8-phase project lifecycle framework](../project-lifecycle/README.md), providing detailed solo development practices that complement the structured phase-based approach. For comprehensive project management, refer to the complete lifecycle documentation.
+
+**Enhanced Documentation Systems**: This guide now connects with enhanced documentation systems including [Feature Development Best Practices](../project-lifecycle/feature-development/README.md) and [Git Workflow and Policies](../project-lifecycle/git-workflow/README.md) for comprehensive development guidance.
+
 ## 1. Documentation Standards
 
 ### 1.1 Core Documentation Structure
@@ -67,16 +71,23 @@ This document presents proven development methodologies, documentation standards
 
 ### 2.2 Phase-Based Implementation
 
+**8-Phase Project Lifecycle Integration:**
+- Follow the comprehensive [project lifecycle framework](../project-lifecycle/README.md) for structured development
+- Align solo development practices with phase-specific guidance and deliverables
+- Integrate with methodology-specific approaches (MVP/Rapid, Balanced/Standard, Comprehensive/Enterprise)
+- Reference [Feature Development Best Practices](../project-lifecycle/feature-development/README.md) for detailed feature-level guidance
+
 **Granular Sub-Phase Structure:**
-- Break work into 4-8 hour focused deliverables
-- Each sub-phase should complete one user-facing feature
+- Break work into 4-8 hour focused deliverables aligned with project lifecycle phases
+- Each sub-phase should complete one user-facing feature following feature development guidelines
 - Clear acceptance criteria and implementation-to-UI integration requirements
-- Sequential phases with defined dependencies
+- Sequential phases with defined dependencies as outlined in the project lifecycle framework
 
 **Phase Documentation:**
-- Document each phase with clear objectives and deliverables
-- Include technical specifications and integration requirements
-- Maintain handoff documents for knowledge transfer
+- Document each phase with clear objectives and deliverables following lifecycle templates
+- Include technical specifications and integration requirements per phase documentation
+- Maintain handoff documents for knowledge transfer using established templates
+- Reference appropriate phase documentation for specific guidance and checklists
 
 ### 2.3 AI-Assisted Development Framework
 
@@ -155,20 +166,20 @@ This document presents proven development methodologies, documentation standards
 **Multi-Pass Review Process:**
 - First pass: AI-assisted code review for syntax, best practices, and potential issues
 - Second pass: Manual review focusing on business logic, user experience, and edge cases
-- Third pass: Integration testing and cross-feature impact analysis
-- Final pass: Performance validation and accessibility compliance check
+- Third pass: Integration testing and cross-feature impact analysis using [Feature Development guidelines](../project-lifecycle/feature-development/README.md)
+- Final pass: Performance validation and accessibility compliance check per quality assurance standards
 
 **Automated Quality Gates:**
-- Set up automated testing pipelines that run on every commit
+- Set up automated testing pipelines that run on every commit following [Git Workflow policies](../project-lifecycle/git-workflow/README.md)
 - Use AI-powered static analysis tools for code quality and security scanning
 - Implement automated accessibility testing and performance benchmarking
-- Create custom linting rules that enforce project-specific standards
+- Create custom linting rules that enforce project-specific standards aligned with project lifecycle requirements
 
 **Decision Validation Framework:**
 - Use AI to analyze technical decisions against project requirements and constraints
 - Create decision trees for common architectural choices with AI-generated pros/cons
 - Validate implementation approaches through AI consultation and research
-- Document decision rationale for future reference and team onboarding
+- Document decision rationale for future reference and team onboarding using [project lifecycle decision trees](../project-lifecycle/decision-trees/)
 
 ### 4.2 Knowledge Management for Solo Development
 
@@ -373,17 +384,23 @@ src/
 
 ### 9.1 Roadmap Structure
 
+**8-Phase Project Lifecycle Integration:**
+- Follow the comprehensive [project lifecycle framework](../project-lifecycle/README.md) with 8 structured phases
+- Align with methodology-specific timelines (MVP: 2-4 weeks, Balanced: 4-8 weeks, Comprehensive: 8-12 weeks)
+- Use established phase templates and deliverables for consistency
+- Reference [enhanced roadmap templates](../_init/ROADMAP_TEMPLATE.md) for project planning
+
 **Phase-Based Planning:**
-- Sequential 4-week development phases
-- Clear deliverables and acceptance criteria
-- Dependency mapping between phases
-- Regular milestone reviews and adjustments
+- Sequential development phases following the established 8-phase structure
+- Clear deliverables and acceptance criteria per phase documentation
+- Dependency mapping between phases using integration matrices
+- Regular milestone reviews and adjustments with methodology-specific guidance
 
 **Sub-Phase Granularity:**
-- Break phases into 4-8 hour work units
-- Each unit delivers complete user-facing functionality
-- Clear integration requirements between units
-- Progress tracking at granular level
+- Break phases into 4-8 hour work units following [Feature Development guidelines](../project-lifecycle/feature-development/README.md)
+- Each unit delivers complete user-facing functionality per feature development standards
+- Clear integration requirements between units using core features documentation
+- Progress tracking at granular level with established templates and checklists
 
 ### 9.2 Handoff Process
 
@@ -529,16 +546,16 @@ src/
 ### 13.1 Communication Standards
 
 **Documentation-First Communication:**
-- All architectural decisions documented with rationale
-- Regular knowledge sharing sessions and documentation reviews
-- Clear escalation paths for technical decisions
-- Standardized formats for technical proposals and RFCs
+- All architectural decisions documented with rationale following [project lifecycle decision trees](../project-lifecycle/decision-trees/)
+- Regular knowledge sharing sessions and documentation reviews per phase requirements
+- Clear escalation paths for technical decisions using established project lifecycle framework
+- Standardized formats for technical proposals and RFCs aligned with project templates
 
 **Asynchronous Collaboration:**
-- Comprehensive commit messages with context and reasoning
-- Pull request templates with required information
-- Code review guidelines with specific focus areas
-- Regular async updates on progress and blockers
+- Comprehensive commit messages with context and reasoning following [Git Workflow conventions](../project-lifecycle/git-workflow/commit-conventions.md)
+- Pull request templates with required information per [Git Workflow policies](../project-lifecycle/git-workflow/pull-request-templates.md)
+- Code review guidelines with specific focus areas aligned with feature development standards
+- Regular async updates on progress and blockers using established progress tracking templates
 
 ### 13.2 Knowledge Management
 
@@ -585,3 +602,83 @@ src/
 - Incident response procedures and post-mortems
 
 These universal best practices provide a foundation for systematic, high-quality software development that can be adapted to any project context while maintaining proven methodologies for success.
+
+## 15. Integration with Enhanced Documentation Systems
+
+### 15.1 Project Lifecycle Framework Integration
+
+**Complete 8-Phase Development Process:**
+- **Phase 0-1**: Project conception and technology stack selection for foundational decisions
+- **Phase 2**: Project setup with development environment and team workflows
+- **Phase 3**: Design and architecture with comprehensive system planning
+- **Phase 4**: Core development with [Feature Development Best Practices](../project-lifecycle/feature-development/README.md) integration
+- **Phase 5-8**: Quality assurance through maintenance with production-ready practices
+- **Reference**: [Complete Project Lifecycle Documentation](../project-lifecycle/README.md)
+
+**Methodology-Specific Guidance:**
+- **MVP/Rapid (2-4 weeks)**: Streamlined practices for rapid development and deployment
+- **Balanced/Standard (4-8 weeks)**: Comprehensive practices for production-ready applications
+- **Comprehensive/Enterprise (8-12 weeks)**: Advanced practices for enterprise-grade development
+- **Integration**: All solo development practices align with methodology-specific requirements
+
+### 15.2 Feature Development Integration
+
+**Individual Feature Development:**
+- Follow [Feature Development Best Practices](../project-lifecycle/feature-development/README.md) for detailed feature-level guidance
+- Use [Feature Planning Templates](../project-lifecycle/feature-development/feature-planning-template.md) for consistent scoping
+- Apply [Feature Completion Checklists](../project-lifecycle/feature-development/feature-completion-checklist.md) for quality gates
+- Integrate with core features documentation for authentication, database, API, and testing patterns
+
+**Development Workflow Enhancement:**
+- Structured feature development process from planning to completion
+- Code optimization and cleanup procedures before commits
+- Integration testing and cross-feature impact analysis
+- Quality gates and validation checkpoints for feature completion
+
+### 15.3 Git Workflow Integration
+
+**Comprehensive Git Policies:**
+- Follow [Git Workflow and Policies](../project-lifecycle/git-workflow/README.md) for complete version control guidance
+- Use [Branching Strategies](../project-lifecycle/git-workflow/branching-strategies.md) for organized development workflows
+- Apply [Commit Conventions](../project-lifecycle/git-workflow/commit-conventions.md) for consistent commit messaging
+- Implement [Pull Request Templates](../project-lifecycle/git-workflow/pull-request-templates.md) for structured code reviews
+
+**Enhanced Version Control Practices:**
+- Methodology-specific branching strategies and merge policies
+- Automated quality gates and CI/CD integration
+- Conflict resolution strategies for documentation-driven development
+- Team collaboration patterns and code review processes
+
+### 15.4 Cross-System Integration Benefits
+
+**Seamless Documentation Flow:**
+- Consistent cross-referencing between all documentation systems
+- Integrated troubleshooting workflows from active blockers to prevention strategies
+- Knowledge management flow from development to lessons learned
+- Template consistency across all project phases and feature development
+
+**Enhanced Solo Development Experience:**
+- Comprehensive guidance from project conception to maintenance
+- Structured decision-making with established frameworks and templates
+- Quality assurance integration across all development phases
+- Continuous improvement through integrated knowledge management systems
+
+## Related Documentation Systems
+
+### 📚 Core Documentation Integration
+- [Project Lifecycle Framework](../project-lifecycle/README.md) - Complete 8-phase development process
+- [Feature Development Best Practices](../project-lifecycle/feature-development/README.md) - Individual feature development guidance
+- [Git Workflow and Policies](../project-lifecycle/git-workflow/README.md) - Comprehensive version control practices
+- [Core Application Features](../core-features/README.md) - Authentication, database, API, state management, error handling, testing
+
+### 🛠️ Development Resources
+- [Development Troubleshooting](./troubleshooting/README.md) - Issue resolution and knowledge management
+- [CSS Modules Guide](./CSS_MODULES_GUIDE.md) - Design system implementation
+- [Git Conflict Resolution](./GIT_CONFLICT_RESOLUTION_GUIDE.md) - Version control conflict strategies
+- [Session Recovery Process](./SESSION_RECOVERY_PROCESS.md) - Context preservation
+
+### 📋 Templates and Planning
+- [Enhanced Roadmap Template](../_init/ROADMAP_TEMPLATE.md) - Project planning with methodology integration
+- [Bug Tracking Template](../_init/BUG_TRACKING_TEMPLATE.md) - Issue management
+- [Progress Template](../_init/PROGRESS_TEMPLATE.md) - Progress tracking
+- [Quick Start Guide](../_init/_QUICK_START.md) - Getting started resources
